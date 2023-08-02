@@ -1,3 +1,4 @@
+[![Website Status](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://njwright92.github.io/paper-kit-portfolio/)
 # Portfolio
 This project is a personal portfolio built using the Paper Kit React template. It showcases various projects and provides information about the ME . The portfolio is built using React and Reactstrap, and it includes several useful dependencies to enhance its functionality.
 
