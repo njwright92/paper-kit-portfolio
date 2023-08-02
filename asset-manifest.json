@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/paperKitPortfolio/static/css/main.e60c190d.css",
+    "main.js": "/paperKitPortfolio/static/js/main.86389f7d.js",
+    "static/media/brewing.gif": "/paperKitPortfolio/static/media/brewing.9b560256a7f49c052661.gif",
+    "static/media/jetPack.gif": "/paperKitPortfolio/static/media/jetPack.4f4c0f91909ff71e2c1e.gif",
+    "static/media/nys.gif": "/paperKitPortfolio/static/media/nys.de9ac1cb1025a4c2876b.gif",
+    "static/media/charts.jpg": "/paperKitPortfolio/static/media/charts.9ee9921e3cde9533e5d2.jpg",
+    "static/media/reducer.jpg": "/paperKitPortfolio/static/media/reducer.bc602afbf31c85f3c630.jpg",
+    "static/media/clouds.png": "/paperKitPortfolio/static/media/clouds.3c700c1313cc1cd3d3c5.png",
+    "static/media/antoine-barres.jpg": "/paperKitPortfolio/static/media/antoine-barres.bc3299c239c25e5bf937.jpg",
+    "static/media/ripper-snowboarder.gif": "/paperKitPortfolio/static/media/ripper-snowboarder.a838402ca66030c79fa9.gif",
+    "static/media/ssMenu.jpg": "/paperKitPortfolio/static/media/ssMenu.62ac5f69d44ef33d06a5.jpg",
+    "static/media/proTracker.jpg": "/paperKitPortfolio/static/media/proTracker.8ee19ec61a1e4929656f.jpg",
+    "static/media/rail.jpg": "/paperKitPortfolio/static/media/rail.c430ef5918d096b86780.jpg",
+    "static/media/bshaw.jpg": "/paperKitPortfolio/static/media/bshaw.22361b6b3254e21b029d.jpg",
+    "static/media/medium.jpg": "/paperKitPortfolio/static/media/medium.9346f59ea96645cf18a5.jpg",
+    "static/media/fog-low.png": "/paperKitPortfolio/static/media/fog-low.965eab52c95e117d1d45.png",
+    "static/media/resume.pdf": "/paperKitPortfolio/static/media/resume.0d50c17f15f5d4c1a873.pdf",
+    "static/media/flinstone.jpg": "/paperKitPortfolio/static/media/flinstone.cbb7c6330667ac710e3a.jpg",
+    "static/media/clem-onojeghuo-2.jpg": "/paperKitPortfolio/static/media/clem-onojeghuo-2.d16702ce00aa38f275c0.jpg",
+    "static/media/ayo-ogunseinde-2.jpg": "/paperKitPortfolio/static/media/ayo-ogunseinde-2.f4af8f2c98f6968c5ae9.jpg",
+    "static/media/joe-gardner-2.jpg": "/paperKitPortfolio/static/media/joe-gardner-2.09841708956117e93a7b.jpg",
+    "static/media/clem-onojeghuo-3.jpg": "/paperKitPortfolio/static/media/clem-onojeghuo-3.83003f446b7372176b72.jpg",
+    "static/media/me.jpg": "/paperKitPortfolio/static/media/me.3e29b66e9abf6f5fc2ba.jpg",
+    "static/media/erik-lucatero-2.jpg": "/paperKitPortfolio/static/media/erik-lucatero-2.d09715abe0463c58d6be.jpg",
+    "static/media/nucleo-icons.eot": "/paperKitPortfolio/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
+    "static/media/nucleo-icons.ttf": "/paperKitPortfolio/static/media/nucleo-icons.4466aeec3386b965a232.ttf",
+    "static/media/nucleo-icons.woff": "/paperKitPortfolio/static/media/nucleo-icons.8e954b749f951b654fc6.woff",
+    "static/media/nucleo-icons.woff2": "/paperKitPortfolio/static/media/nucleo-icons.ec16bc4cc4526801004d.woff2",
+    "index.html": "/paperKitPortfolio/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.e60c190d.css",
+    "static/js/main.86389f7d.js"
+  ]
+}
