@@ -60,7 +60,7 @@ function SectionExamples() {
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
-                  src={require("assets/img/proTracker.jpg")}
+                  src={require("assets/img/ProTracking.jpg")}
                   style={{ width: "77%" }}
                 />
               </a>

@@ -28,14 +28,14 @@ const SectionButtons = () => {
       <Container>
         <Row className="align-items-center">
           <Col className="text-center mb-4">
-          <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "5em", textShadow: "2px 2px 4px #000000" }}>
+            <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "5em", textShadow: "2px 2px 4px #000000" }}>
               <strong>Home</strong>
             </h1>
           </Col>
         </Row>
         <Row className="align-items-center">
           <Col className="text-center mb-2 mt-2">
-            <a href={resume} target="_blank" rel="noopener noreferrer" style={{ color: '#000080', fontSize: '2em' }}>
+            <a href={resume} target="_blank" rel="noopener noreferrer" style={{ color: '#000080', fontSize: '1.5em', fontWeight: 'bold' }}>
               <i className="fa fa-file-pdf-o fa-pulse" aria-hidden="true" /> View My Resume
             </a>
           </Col>
@@ -43,18 +43,16 @@ const SectionButtons = () => {
         <Row className="align-items-center">
           <Col className="text-center mb-2 mt-2" id="gif_game">
             <Button type='submit' id='game-button' color='danger' className="btn btn-lg" onClick={gifGame}>Show GIF</Button>
-            <p className="text-warning" style={{ marginTop: '1em', fontSize: '1.8em', fontWeight: 'bold' }}>
+            <p className="text-dark" style={{ marginTop: '1em', fontSize: '1.5em', fontWeight: 'bold' }}>
               <i className="fa fa-arrow-up fa-pulse" aria-hidden="true" /> Guessing Game!
             </p>
           </Col>
         </Row>
-        <Row className="align-items-center">
-          <Col className="text-center mb-2 mt-4">
-            <img src={nys} alt="logo" style={{ borderRadius: '25%', boxShadow: "0 0 1em rgba(0,0,0,0.5)" }} />
+        <Row className="align-items-center justify-content-center">
+          <Col xs={12} md={6} className="text-center mb-2 mt-4">
+            <img src={nys} alt="logo" style={{ borderRadius: '25%', boxShadow: "0 0 1em rgba(0,0,0,0.5)", maxWidth: '27em' }} />
           </Col>
-        </Row>
-        <Row className="align-items-center">
-          <Col className="text-center mb-2 mt-4">
+          <Col xs={12} md={6} className="text-center mb-2 mt-4">
             <Card className="bg-secondary rounded-5">
               <CardBody>
                 <CardTitle tag="h1" className="text-center mb-2">Request a Site!</CardTitle>
@@ -75,6 +73,7 @@ const SectionButtons = () => {
         </Row>
       </Container>
     </div>
+
   );
 }
 

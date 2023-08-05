@@ -33,7 +33,7 @@ const SectionLogin = () => {
   };
 
   return (
-    <div className="form-container"> {/* Center the form */}
+    <div className="form-container"> 
     
       <Formik
         initialValues={{
