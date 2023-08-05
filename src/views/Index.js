@@ -25,36 +25,12 @@ import SectionCarousel from "views/index-sections/SectionCarousel.js";
 import SectionLogin from "views/index-sections/SectionLogin.js";
 import SectionExamples from "views/index-sections/SectionExamples.js";
 
-// Import the styles.css file for smooth scrolling effect
-import "../assets/css/styles.css";
-
 function Index() {
-  // Add state to handle the scroll position
-  const [scrollY, setScrollY] = React.useState(0);
-
-  // useEffect to update the scroll position on scroll
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    // Add event listener to window scroll event
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // Calculate the transform value for smooth scrolling effect
-  const transformValue = `translate3d(0, ${-scrollY * 0.3}px, 0)`;
-
   return (
     <>
       <IndexNavbar />
       <IndexHeader />
-      <div className="main" style={{ transform: transformValue }}>
+      <div className="main">
         <SectionButtons />
         <SectionCarousel />
         <SectionExamples />
@@ -66,4 +42,3 @@ function Index() {
 }
 
 export default Index;
-
