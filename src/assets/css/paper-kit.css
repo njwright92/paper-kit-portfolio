@@ -2247,7 +2247,7 @@ textarea.form-control {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
   font-weight: 300;
 }
 
@@ -2308,7 +2308,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .footer-big h5,
 .footer-big h4,
 .media .media-heading {
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
 }
 .title,
 .title a,
@@ -2426,7 +2426,7 @@ body {
   color: #66615b;
   font-size: 14px;
   font-weight: 300;
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
 }
 
 a {
@@ -4761,7 +4761,7 @@ License - nucleoapp.com/license/
 
 .footer {
   background-color: #FFFFFF;
-  line-height: 10px;
+  line-height: 36px;
 }
 .footer.footer-black h4 {
   color: #FFFFFF;
@@ -4799,7 +4799,7 @@ License - nucleoapp.com/license/
 }
 .footer .links ul.stacked-links > li {
   display: block;
-  line-height: 16px;
+  line-height: 26px;
 }
 .footer .links ul.stacked-links h4 {
   margin-top: 0px;
