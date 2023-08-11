@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/paper-kit-portfolio/static/css/main.374d2cf5.css",
+    "main.css": "/paper-kit-portfolio/static/css/main.4dd3558f.css",
     "main.js": "/paper-kit-portfolio/static/js/main.34a7438f.js",
     "static/media/brewing.gif": "/paper-kit-portfolio/static/media/brewing.9b560256a7f49c052661.gif",
     "static/media/jetPack.gif": "/paper-kit-portfolio/static/media/jetPack.4f4c0f91909ff71e2c1e.gif",
@@ -32,7 +32,7 @@
     "index.html": "/paper-kit-portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.374d2cf5.css",
+    "static/css/main.4dd3558f.css",
     "static/js/main.34a7438f.js"
   ]
 }
