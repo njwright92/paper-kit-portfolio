@@ -33,8 +33,8 @@ const SectionLogin = () => {
   };
 
   return (
-    <div className="form-container"> 
-    
+    <div className="form-container">
+
       <Formik
         initialValues={{
           firstName: '',
@@ -47,12 +47,12 @@ const SectionLogin = () => {
         validate={validateContactForm}
       >
         <Form>
-          <h1 style={{ color: '#fff' }}><strong>Site Request</strong></h1>
+          <h1 style={{ color: '#fff', textAlign: 'center', marginBottom: '2rem' }}><strong>Site Request</strong></h1>
           <FormGroup row>
             <Label htmlFor='firstName' md='2' style={{ color: '#fff' }}>
               <strong>First Name</strong>
             </Label>
-            <Col md="10"> {/* Adjust column size */}
+            <Col md="10">
               <Field
                 name='firstName'
                 placeholder='First Name'
@@ -127,14 +127,14 @@ const SectionLogin = () => {
               />
             </Col>
           </FormGroup>
-
           <FormGroup row>
-            <Col md={{ size: 10, offset: 1 }}>
+            <Col md={{ size: 10, offset: 4 }}>
               <Button type='submit' color='primary'>
                 Send Request
               </Button>
             </Col>
           </FormGroup>
+
         </Form>
       </Formik>
     </div>

@@ -84,6 +84,11 @@
   /* Light green background color */
 }
 
+.carousel-container {
+  background-color: #c2e7d5;
+  /* Replace with the background color of your page */
+}
+
 #carousel .carousel-title h1 {
   font-size: 3rem;
   /* Bigger font size for the title */

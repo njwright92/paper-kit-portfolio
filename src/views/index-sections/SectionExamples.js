@@ -36,8 +36,13 @@ function SectionExamples() {
             </Col>
           </Row>
           <Row className="example-page">
-
             <Col className="text-center" md="6">
+              <Button
+                className="btn-lg btn-round"
+                color="primary"
+                href="https://slapshot16.com">
+                <i className="fa fa-cutlery" aria-hidden="true"></i> SlapShot16
+              </Button>
               <a href="https://slapshopt16.com">
                 <img
                   alt="..."
@@ -46,16 +51,14 @@ function SectionExamples() {
                   style={{ width: "77%" }}
                 />
               </a>
-              <Button
-                className="btn-lg btn-round"
-                color="primary"
-                href="https://slapshot16.com"
-
-              >
-                Slap Shot 16
-              </Button>
             </Col>
             <Col className="text-center" md="6">
+              <Button
+                className="btn-lg btn-pill"
+                color="success"
+                href="https://nativeprotracker.com">
+                <i className="fa fa-line-chart" aria-hidden="true"></i> NativeProTracker
+              </Button>
               <a href="https://nativeprotracker.com">
                 <img
                   alt="..."
@@ -64,12 +67,6 @@ function SectionExamples() {
                   style={{ width: "77%" }}
                 />
               </a>
-              <Button
-                className="btn-lg btn-pill"
-                color="success"
-                href="https://nativeprotracker.com">
-                NativeProTracker
-              </Button>
             </Col>
           </Row>
         </Container>
