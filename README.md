@@ -1,6 +1,6 @@
 [![Website Status](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://njwright92.github.io/paper-kit-portfolio/)
 # Portfolio
-This project is a personal portfolio built using the Paper Kit React template. It showcases various projects and provides information about the ME . The portfolio is built using React and Reactstrap, and it includes several useful dependencies to enhance its functionality.
+Welcome to my personal portfolio, your one-stop shop to get to know me and my work. Crafted using the latest React 18.2 and the Paper Kit React template, this portfolio aims to give you a comprehensive look at my various projects. It leverages React and Reactstrap, along with a set of robust dependencies, to offer a seamless experience. Whether you're here to explore my coding projects or just to learn more about me, everything you need is just a click away.
 
 ## Getting Started
 To run this portfolio on your local machine, follow these steps:
