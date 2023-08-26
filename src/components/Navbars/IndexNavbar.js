@@ -88,7 +88,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="http://twitter.com/naterbug321"
+                href="https://twitter.com/naterbug321"
                 target="_blank"
                 title="Follow me on Twitter"
               >
@@ -99,7 +99,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="http://facebook.com/njwright92"
+                href="https://facebook.com/njwright92"
                 target="_blank"
                 title="add me on Facebook"
               >
