@@ -24,6 +24,7 @@ import SectionButtons from "views/index-sections/SectionButtons.js";
 import SectionCarousel from "views/index-sections/SectionCarousel.js";
 import SectionLogin from "views/index-sections/SectionLogin.js";
 import SectionExamples from "views/index-sections/SectionExamples.js";
+import BackToTop from "components/backToTop";
 
 function Index() {
   return (
@@ -31,6 +32,7 @@ function Index() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
+        <BackToTop />
         <SectionButtons />
         <SectionCarousel />
         <SectionExamples />
