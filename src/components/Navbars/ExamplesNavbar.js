@@ -16,80 +16,60 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
-import { Link } from "react-router-dom";
-// nodejs library that concatenates strings
-import classnames from "classnames";
 
-// reactstrap components
+import React,
+{
+  useState,
+  useEffect
+}
+  from "react";
 import {
   Collapse,
-  NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
   Nav,
   Container,
-  Button,
+  Button
 } from "reactstrap";
 
 function ExamplesNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [navbarColor, setNavbarColor] = useState("navbar-transparent");
+  const [navbarCollapse, setNavbarCollapse] = useState(false);
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
     document.documentElement.classList.toggle("nav-open");
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const updateNavbarColor = () => {
-      if (
-        document.documentElement.scrollTop > 299 ||
-        document.body.scrollTop > 299
-      ) {
-        setNavbarColor("");
-      } else if (
-        document.documentElement.scrollTop < 300 ||
-        document.body.scrollTop < 300
-      ) {
-        setNavbarColor("navbar-transparent");
-      }
+      setNavbarColor(
+        document.documentElement.scrollTop > 299 || document.body.scrollTop > 299
+          ? ""
+          : "navbar-transparent"
+      );
     };
 
     window.addEventListener("scroll", updateNavbarColor);
+    return () => window.removeEventListener("scroll", updateNavbarColor);
+  }, []);
 
-    return function cleanup() {
-      window.removeEventListener("scroll", updateNavbarColor);
-    };
-  });
   return (
-    <Navbar
-      className={classnames("fixed-top", navbarColor)}
+    <Navbar className={(navbarColor)}
       color-on-scroll="300"
       expand="lg"
     >
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand
-            data-placement="bottom"
-            to="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
-            tag={Link}
-          >
-            Paper Kit 2
-          </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
-            className={classnames("navbar-toggler navbar-toggler", {
+            className={("navbar-toggler navbar-toggler", {
               toggled: navbarCollapse,
             })}
             onClick={toggleNavbarCollapse}
           >
-            <span className="navbar-toggler-bar bar1" />
-            <span className="navbar-toggler-bar bar2" />
-            <span className="navbar-toggler-bar bar3" />
+            <i class="fa fa-lg fa-bars" aria-hidden="true"></i>
           </button>
         </div>
         <Collapse
@@ -105,7 +85,7 @@ function ExamplesNavbar() {
                 target="_blank"
                 title="Follow me on Twitter"
               >
-                <i className="fa fa-twitter" />
+                <i className="fa fa-lg fa-twitter" />
                 <p className="d-lg-none">Twitter</p>
               </NavLink>
             </NavItem>
@@ -116,7 +96,7 @@ function ExamplesNavbar() {
                 target="_blank"
                 title="Add me on Facebook"
               >
-                <i className="fa fa-facebook-square" />
+                <i className="fa fa-lg fa-facebook-square" />
                 <p className="d-lg-none">Facebook</p>
               </NavLink>
             </NavItem>
@@ -127,7 +107,7 @@ function ExamplesNavbar() {
                 target="_blank"
                 title="Follow me on Instagram"
               >
-                <i className="fa fa-instagram" />
+                <i className="fa fa-lg fa-instagram" />
                 <p className="d-lg-none">Instagram</p>
               </NavLink>
             </NavItem>
@@ -138,7 +118,7 @@ function ExamplesNavbar() {
                 target="_blank"
                 title="Star on GitHub"
               >
-                <i className="fa fa-github" />
+                <i className="fa fa-lg fa-github" />
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
             </NavItem>
@@ -149,7 +129,7 @@ function ExamplesNavbar() {
                 target="_blank"
                 title="Add me on linkedin"
               >
-                <i className="fab fa-linkedin" />
+                <i className="fab fa-lg fa-linkedin" />
                 <p className="d-lg-none">Linkedin</p>
               </NavLink>
             </NavItem>
@@ -157,20 +137,20 @@ function ExamplesNavbar() {
               <Button
                 className="btn-pill"
                 color="success"
-                href="nativeprotracker.com/"
+                href="https://nativeprotracker.com/"
                 target="_blank"
               >
-                <i class="fa fa-line-chart" aria-hidden="true"></i> ProTracker
+                <i class="fa fa-lg fa-line-chart" aria-hidden="true"></i> ProTracker
               </Button>
             </NavItem>
             <NavItem>
               <Button
                 className="btn-round"
                 color="primary"
-                href="www.slapshot16.com/"
+                href="https://www.slapshot16.com/"
                 target="_blank"
               >
-                <i class="fa fa-cutlery" aria-hidden="true"></i> Slap Shot 16
+                <i class="fa fa-lg fa-cutlery" aria-hidden="true"></i> Slap Shot 16
               </Button>
             </NavItem>
           </Nav>
