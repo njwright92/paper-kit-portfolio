@@ -37,6 +37,11 @@ function IndexHeader() {
         <div className="filter" />
         <div className="content-center">
           <Container>
+          <h2 className="presentation-subtitle text-center">
+              <em>
+                Nathan John Wright
+              </em>
+            </h2>
             <div className="title-brand">
               <h1 className="presentation-title">"Showcase"</h1>
               <div className="fog-low">

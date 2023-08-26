@@ -23,6 +23,7 @@ import React,
   useEffect
 }
   from "react";
+import resume from '../../assets/img/resumeIT.pdf';
 import {
   Collapse,
   Navbar,
@@ -69,7 +70,7 @@ function ExamplesNavbar() {
             })}
             onClick={toggleNavbarCollapse}
           >
-            <i class="fa fa-lg fa-bars" aria-hidden="true"></i>
+            <i className="fa fa-lg fa-bars" aria-hidden="true"></i>
           </button>
         </div>
         <Collapse
@@ -134,13 +135,25 @@ function ExamplesNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Resume"
+              >
+                <i className="fa fa-file-o" />
+                <p className="d-lg-none">Resume</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <Button
                 className="btn-pill"
                 color="success"
                 href="https://nativeprotracker.com/"
                 target="_blank"
               >
-                <i class="fa fa-lg fa-line-chart" aria-hidden="true"></i> ProTracker
+                <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i> ProTracker
               </Button>
             </NavItem>
             <NavItem>
@@ -150,7 +163,7 @@ function ExamplesNavbar() {
                 href="https://www.slapshot16.com/"
                 target="_blank"
               >
-                <i class="fa fa-lg fa-cutlery" aria-hidden="true"></i> Slap Shot 16
+                <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i> Slap Shot 16
               </Button>
             </NavItem>
           </Nav>

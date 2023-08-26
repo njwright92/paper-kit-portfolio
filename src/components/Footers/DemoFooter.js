@@ -22,7 +22,7 @@ import { Row, Container } from "reactstrap";
 
 function DemoFooter() {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{ marginBottom: '7em' }}>
       <Container>
         <Row>
           <nav className="footer-nav">
@@ -50,7 +50,7 @@ function DemoFooter() {
           <div className="credits">
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Nathan Wright
+              <i className="fa fa-lg fa-heart heart" /> by Nathan Wright
             </span>
           </div>
         </Row>
