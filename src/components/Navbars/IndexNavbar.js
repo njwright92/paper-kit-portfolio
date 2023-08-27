@@ -41,7 +41,7 @@ function IndexNavbar() {
     <Navbar
       className="fixed-bottom"
       expand="lg"
-      style={{ backgroundColor: "#f5f5f5d4" }} // directly applying the background color here
+      style={{ backgroundColor: "#f5f5f5d4", marginBottom: '1px' }}
     >
       <Container>
         <div className="navbar-translate">
@@ -54,6 +54,7 @@ function IndexNavbar() {
             <span className="navbar-toggler-bar bar1" />
             <span className="navbar-toggler-bar bar2" />
             <span className="navbar-toggler-bar bar3" />
+            <span className="navbar-toggler-bar bar4" />
           </button>
         </div>
         <Collapse
@@ -61,7 +62,7 @@ function IndexNavbar() {
           navbar
           isOpen={navbarCollapse}
         >
-          <Nav white-navbar>
+          <Nav white-navbar className="justify-content-center">
             <NavItem>
               <NavLink
                 data-placement="bottom"
@@ -70,7 +71,7 @@ function IndexNavbar() {
                 title="Follow me on Twitter"
               >
                 <i className="fa fa-lg fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
+                <p className="d-lg-none"> Twitter</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -81,7 +82,7 @@ function IndexNavbar() {
                 title="add me on Facebook"
               >
                 <i className="fa fa-lg fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
+                <p className="d-lg-none"> Facebook</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -92,7 +93,7 @@ function IndexNavbar() {
                 title="Follow me on Instagram"
               >
                 <i className="fa fa-lg fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
+                <p className="d-lg-none"> Instagram</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -103,7 +104,7 @@ function IndexNavbar() {
                 title="add me on GitHub"
               >
                 <i className="fa fa-lg fa-github" />
-                <p className="d-lg-none">GitHub</p>
+                <p className="d-lg-none"> GitHub</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -114,7 +115,7 @@ function IndexNavbar() {
                 title="add me on linkedin"
               >
                 <i className="fab fa-lg fa-linkedin" />
-                <p className="d-lg-none">Linkedin</p>
+                <p className="d-lg-none"> Linkedin</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -126,7 +127,7 @@ function IndexNavbar() {
                 title="Resume"
               >
                 <i className="fa fa-lg fa-file-o" />
-                <p className="d-lg-none">Resume</p>
+                <p className="d-lg-none"> Resume</p>
               </NavLink>
             </NavItem>
             <NavItem>

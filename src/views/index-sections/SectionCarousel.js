@@ -127,8 +127,8 @@ function SectionCarousel() {
         <Container>
           <Row className="mx-auto">
             <Col className="mx-auto" md="4">
-              <div className="carousel-title">
-                <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "5em", textShadow: "2px 2px 4px #000000" }}>Passions!
+              <div className="carousel-title text-center">
+                <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "5em", textShadow: "2px 2px 4px #000000",  }}>Passions!
                 </h1>
                 <h6 className="text-center mb-1"><em>I enjoy stand up comedy, action Sports, and the process of creation "brewing cooking and Web Development!"</em></h6>
                 <p className="text-center mb-1">

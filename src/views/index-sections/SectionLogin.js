@@ -33,7 +33,7 @@ const SectionLogin = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container text-center">
 
       <Formik
         initialValues={{
@@ -46,7 +46,7 @@ const SectionLogin = () => {
         onSubmit={handleSubmit}
         validate={validateContactForm}
       >
-        <Form>
+        <Form className="p-1">
           <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "4em", textShadow: "2px 2px 4px #000000" }}>Site request form</h1>
           <FormGroup row>
             <Label htmlFor='firstName' md='2' style={{ color: 'black' }}>

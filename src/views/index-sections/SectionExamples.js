@@ -79,18 +79,16 @@ function SectionExamples() {
                 className="btn-lg btn-pill"
                 color="dark"
                 href="https://github.com/njwright92/comedify"
-
+                style={{ marginLeft: '1em', marginBottom: '0' }}
               >
                 <p>Checkout the Github Repo</p>
               </Button>
-
               <img
                 alt="..."
                 className="img-rounded img-responsive"
                 src={require("assets/img/comedify.jpeg")}
-                style={{ width: "60%", marginLeft: '1em' }}
+                style={{ width: "77%", marginLeft: '1em', marginTop: '1em' }}
               />
-
             </Col>
           </Row>
 
