@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/paper-kit-portfolio/static/css/main.f23ca69f.css",
-    "main.js": "/paper-kit-portfolio/static/js/main.59498970.js",
+    "main.css": "/paper-kit-portfolio/static/css/main.c683da4e.css",
+    "main.js": "/paper-kit-portfolio/static/js/main.407dc48d.js",
     "static/media/brewing.gif": "/paper-kit-portfolio/static/media/brewing.9b560256a7f49c052661.gif",
     "static/media/jetPack.gif": "/paper-kit-portfolio/static/media/jetPack.4f4c0f91909ff71e2c1e.gif",
     "static/media/nys.gif": "/paper-kit-portfolio/static/media/nys.de9ac1cb1025a4c2876b.gif",
@@ -17,6 +17,7 @@
     "static/media/bshaw.jpg": "/paper-kit-portfolio/static/media/bshaw.22361b6b3254e21b029d.jpg",
     "static/media/medium.jpg": "/paper-kit-portfolio/static/media/medium.9346f59ea96645cf18a5.jpg",
     "static/media/fog-low.png": "/paper-kit-portfolio/static/media/fog-low.965eab52c95e117d1d45.png",
+    "static/media/comedify.jpeg": "/paper-kit-portfolio/static/media/comedify.fb43e58870b42487f28a.jpeg",
     "static/media/flinstone.jpg": "/paper-kit-portfolio/static/media/flinstone.cbb7c6330667ac710e3a.jpg",
     "static/media/resumeIT.pdf": "/paper-kit-portfolio/static/media/resumeIT.96b2e9fef3ec4f9a666f.pdf",
     "static/media/clem-onojeghuo-2.jpg": "/paper-kit-portfolio/static/media/clem-onojeghuo-2.d16702ce00aa38f275c0.jpg",
@@ -32,7 +33,7 @@
     "index.html": "/paper-kit-portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.f23ca69f.css",
-    "static/js/main.59498970.js"
+    "static/css/main.c683da4e.css",
+    "static/js/main.407dc48d.js"
   ]
 }
