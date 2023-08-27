@@ -128,7 +128,8 @@ function SectionCarousel() {
           <Row className="mx-auto">
             <Col className="mx-auto" md="4">
               <div className="carousel-title">
-                <h1 style={{ textAlign: 'center', marginBottom: ".5em", fontWeight: "bold", color: "black", fontSize: "5em", textShadow: "2px 2px 4px #ffffff" }}><strong>Passions!</strong></h1>
+                <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "5em", textShadow: "2px 2px 4px #000000" }}>Passions!
+                </h1>
                 <h6 className="text-center mb-1"><em>I enjoy stand up comedy, action Sports, and the process of creation "brewing cooking and Web Development!"</em></h6>
                 <p className="text-center mb-1">
                   <strong>"Something you might not know by looking at me is I can run really fast"</strong>
@@ -158,7 +159,9 @@ function SectionCarousel() {
                         onExited={onExited}
                         key={item.src}
                       >
-                        <img src={item.src} alt={item.altText} style={item.style} />
+                        <img src={item.src}
+                          alt={item.altText}
+                          style={item.style} />
                       </CarouselItem>
                     );
                   })}

@@ -30,7 +30,7 @@ function SectionExamples() {
         <Container>
           <Row className="text-center">
             <Col className="mx-auto">
-              <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "5em", textShadow: "2px 2px 4px #c0c0c0" }}>
+              <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "5em", textShadow: "2px 2px 4px #000000" }}>
                 My Projects
               </h1>
             </Col>
@@ -41,7 +41,7 @@ function SectionExamples() {
                 className="btn-lg btn-round"
                 color="primary"
                 href="https://slapshot16.com">
-                <i className="fa fa-cutlery" aria-hidden="true"></i> SlapShot16
+                <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i> SlapShot16
               </Button>
               <a href="https://slapshopt16.com">
                 <img
@@ -55,9 +55,9 @@ function SectionExamples() {
             <Col className="text-center" md="6">
               <Button
                 className="btn-lg btn-pill"
-                color="success"
+                color="warning"
                 href="https://nativeprotracker.com">
-                <i className="fa fa-line-chart" aria-hidden="true"></i> NativeProTracker
+                <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i> NativeProTracker
               </Button>
               <a href="https://nativeprotracker.com">
                 <img
@@ -69,6 +69,31 @@ function SectionExamples() {
               </a>
             </Col>
           </Row>
+          <Row className="example-page justify-content-center">
+            <Col className="text-center">
+              <h3 style={{ margin: '.3em' }}>
+                <strong>Meet Comedify:</strong>
+              </h3>
+              <h5 style={{ marginBottom: '1px' }}>"Your AI-powered sidekick for cracking up the room. Currently under construction! Coming soon!"</h5>
+              <Button
+                className="btn-lg btn-pill"
+                color="dark"
+                href="https://github.com/njwright92/comedify"
+
+              >
+                <p>Checkout the Github Repo</p>
+              </Button>
+
+              <img
+                alt="..."
+                className="img-rounded img-responsive"
+                src={require("assets/img/comedify.jpeg")}
+                style={{ width: "60%", marginLeft: '1em' }}
+              />
+
+            </Col>
+          </Row>
+
         </Container>
       </div>{" "}
     </>

@@ -47,9 +47,9 @@ const SectionLogin = () => {
         validate={validateContactForm}
       >
         <Form>
-          <h1 style={{ color: '#fff', textAlign: 'center', marginBottom: '2rem' }}><strong>Site Request</strong></h1>
+          <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "4em", textShadow: "2px 2px 4px #000000" }}>Site request form</h1>
           <FormGroup row>
-            <Label htmlFor='firstName' md='2' style={{ color: '#fff' }}>
+            <Label htmlFor='firstName' md='2' style={{ color: 'black' }}>
               <strong>First Name</strong>
             </Label>
             <Col md="10">
@@ -65,7 +65,7 @@ const SectionLogin = () => {
           </FormGroup>
 
           <FormGroup row>
-            <Label htmlFor='lastName' md='2' style={{ color: '#fff' }}>
+            <Label htmlFor='lastName' md='2' style={{ color: 'black' }}>
               <strong>Last Name</strong>
             </Label>
             <Col md="10">
@@ -81,7 +81,7 @@ const SectionLogin = () => {
           </FormGroup>
 
           <FormGroup row>
-            <Label htmlFor='phoneNum' md='2' style={{ color: '#fff' }}>
+            <Label htmlFor='phoneNum' md='2' style={{ color: 'black' }}>
               <strong>Phone</strong>
             </Label>
             <Col md="10">
@@ -97,7 +97,7 @@ const SectionLogin = () => {
           </FormGroup>
 
           <FormGroup row>
-            <Label htmlFor='email' md='2' style={{ color: '#fff' }}>
+            <Label htmlFor='email' md='2' style={{ color: 'black' }}>
               <strong>Email</strong>
             </Label>
             <Col md="10">
@@ -114,7 +114,7 @@ const SectionLogin = () => {
           </FormGroup>
 
           <FormGroup row>
-            <Label htmlFor='feedback' md='2' style={{ color: '#fff' }}>
+            <Label htmlFor='feedback' md='2' style={{ color: 'black' }}>
               <strong>Your Site Request</strong>
             </Label>
             <Col md="10">

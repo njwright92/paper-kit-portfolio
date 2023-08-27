@@ -3529,7 +3529,7 @@ License - nucleoapp.com/license/
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   padding: 0;
-  background: #FFFFFF;
+  background: #f5f5f5d4;
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 }
 .navbar .navbar-brand {
@@ -4586,7 +4586,7 @@ License - nucleoapp.com/license/
 }
 
 .section-dark .icons-container {
-  color: #FFFFFF;
+  color: #A8D5BA;
 }
 
 .info .icon {
@@ -5685,7 +5685,7 @@ License - nucleoapp.com/license/
 }
 
 .section-dark {
-  background-color: #0b1011;
+  background-color: #A8D5BA;
 }
 
 .section-image,

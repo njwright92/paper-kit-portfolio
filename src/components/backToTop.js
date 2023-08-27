@@ -33,7 +33,7 @@ const BackToTop = () => {
                     style={{ backgroundColor: 'transparent', border: 'black', boxShadow: 'none' }}
                     onClick={scrollToTop}
                 >
-                    <i className="fa fa-arrow-up" aria-hidden="true" style={{ fontSize: '3.5em', marginRight: 2, color: 'green' }}></i>
+                    <i className="arrow-button fa fa-arrow-up" aria-hidden="true" style={{ fontSize: '3em', marginRight: 2, color: 'black' }}></i>
                 </Button>
             )}
         </div>

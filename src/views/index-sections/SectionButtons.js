@@ -24,12 +24,12 @@ import resume from '../../assets/img/resumeIT.pdf';
 
 const SectionButtons = () => {
   return (
-    <div style={{ backgroundColor: "#c0c0c0", padding: "2em", minHeight: "100vh" }}>
+    <div style={{ backgroundColor: "#A8D5BA", padding: "2em", minHeight: "100vh" }}>
       <Container>
         <Row className="align-items-center">
           <Col className="text-center mb-4">
             <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "5em", textShadow: "2px 2px 4px #000000" }}>
-              <strong>Home</strong>
+              <strong>My ReactApp Portfolio</strong>
             </h1>
           </Col>
         </Row>

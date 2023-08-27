@@ -34,9 +34,13 @@ function Index() {
       <div className="main">
         <BackToTop />
         <SectionButtons />
-        <SectionCarousel />
+        <hr />
         <SectionExamples />
+        <hr />
+        <SectionCarousel />
+        <hr />
         <SectionLogin />
+        <hr />
         <DemoFooter />
       </div>
     </>

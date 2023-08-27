@@ -17,9 +17,7 @@
 
 */
 import React from "react";
-// nodejs library that concatenates strings
 import classnames from "classnames";
-// reactstrap components
 import {
   Button,
   Collapse,
@@ -32,7 +30,6 @@ import {
 import resume from '../../assets/img/resumeIT.pdf';
 
 function IndexNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
   const toggleNavbarCollapse = () => {
@@ -40,37 +37,17 @@ function IndexNavbar() {
     document.documentElement.classList.toggle("nav-open");
   };
 
-  React.useEffect(() => {
-    const updateNavbarColor = () => {
-      if (
-        document.documentElement.scrollTop > 299 ||
-        document.body.scrollTop > 299
-      ) {
-        setNavbarColor("");
-      } else if (
-        document.documentElement.scrollTop < 300 ||
-        document.body.scrollTop < 300
-      ) {
-        setNavbarColor("");
-      }
-    };
-
-    window.addEventListener("scroll", updateNavbarColor);
-
-    return function cleanup() {
-      window.removeEventListener("scroll", updateNavbarColor);
-    };
-  });
   return (
-    <Navbar className={classnames("fixed-bottom", navbarColor)}
-      expand="lg">
+    <Navbar
+      className="fixed-bottom"
+      expand="lg"
+      style={{ backgroundColor: "#f5f5f5d4" }} // directly applying the background color here
+    >
       <Container>
         <div className="navbar-translate">
           <button
             aria-expanded={navbarCollapse}
-            className={classnames("navbar-toggler", {
-              toggled: navbarCollapse,
-            })}
+            className={classnames("navbar-toggler", { toggled: navbarCollapse })}
             onClick={toggleNavbarCollapse}
             style={{ marginLeft: 'auto' }}
           >
@@ -84,7 +61,7 @@ function IndexNavbar() {
           navbar
           isOpen={navbarCollapse}
         >
-          <Nav navbar>
+          <Nav white-navbar>
             <NavItem>
               <NavLink
                 data-placement="bottom"

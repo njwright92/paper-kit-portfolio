@@ -35,7 +35,7 @@ import {
 } from "reactstrap";
 
 function ExamplesNavbar() {
-  const [navbarColor, setNavbarColor] = useState("navbar-transparent");
+  const [navbarColor, setNavbarColor] = useState("#F5F5F5");
   const [navbarCollapse, setNavbarCollapse] = useState(false);
 
   const toggleNavbarCollapse = () => {
@@ -47,8 +47,8 @@ function ExamplesNavbar() {
     const updateNavbarColor = () => {
       setNavbarColor(
         document.documentElement.scrollTop > 299 || document.body.scrollTop > 299
-          ? ""
-          : "navbar-transparent"
+          ? "#F5F5F5"
+          : "#F5F5F5"
       );
     };
 

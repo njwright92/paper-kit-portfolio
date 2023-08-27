@@ -1,3 +1,22 @@
 .main {
-    transition: transform 0.3s ease-in-out; /* Change the duration and easing function as desired */
+    transition: transform 0.3s ease-in-out;
   }
+
+  .arrow-button {
+    font-size: 3em;
+    margin-right: 2px;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .arrow-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .typing-animation {
+    animation: typing 6s steps(40) infinite;
+  }
+  

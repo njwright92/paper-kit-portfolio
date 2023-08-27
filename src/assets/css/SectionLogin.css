@@ -5,14 +5,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2f4f4f;
+  background-color: #A8D5BA;
   /* Dark Slate Gray background color */
 }
 
 /* Form style */
 .formik-form {
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -80,12 +80,12 @@
 /* SectionLogin.css */
 
 #carousel {
-  background-color: #c2e7d5;
+  background-color: #A8D5BA;
   /* Light green background color */
 }
 
 .carousel-container {
-  background-color: #c2e7d5;
+  background-color: #A8D5BA;
   /* Replace with the background color of your page */
 }
 
