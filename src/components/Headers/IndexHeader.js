@@ -18,11 +18,8 @@
 */
 /*eslint-disable*/
 import React from "react";
-
-// reactstrap components
 import { Container } from "reactstrap";
 
-// core components
 
 function IndexHeader() {
   return (
@@ -51,7 +48,7 @@ function IndexHeader() {
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
             </div>
-            <h2 className="presentation-subtitle text-center typing-animation">
+            <h2 className="presentation-subtitle text-center">
               <em>
                 "Your best investment is in yourself"
               </em>
