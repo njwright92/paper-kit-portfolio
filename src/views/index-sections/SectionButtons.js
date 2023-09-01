@@ -20,7 +20,7 @@ import React from "react";
 import { Container, Row, Col, Button, Card, CardBody, CardTitle, CardText } from "reactstrap";
 import nys from '../../assets/img/nys.gif';
 import gifGame from "../../utils/gifGame.js";
-import resume from '../../assets/img/resumeIT.pdf';
+import resume from '../../assets/img/resume.pdf';
 
 const SectionButtons = () => {
   return (
@@ -55,18 +55,23 @@ const SectionButtons = () => {
           <Col xs={12} md={6} className="text-center mb-2 mt-4">
             <Card className="bg-secondary rounded-5">
               <CardBody>
-                <CardTitle tag="h1" className="text-center mb-2">Request a Site!</CardTitle>
+                <CardTitle tag="h1" className="text-center mb-2 p-1">Request a Site!</CardTitle>
                 <CardText className="text-center text-white mb-1 font-weight-bold">
-                  I enjoy developing and designing websites and apps. Please submit your website or app request via email, or scroll to the bottom for the full form. I will promptly respond with an estimated completion time and cost Full.
+                  I enjoy developing websites and apps. Please submit your website or app request via email, or scroll to the bottom for the full form. I will promptly respond with an estimated completion time and cost.
                 </CardText>
               </CardBody>
               <Button
                 className="btn-warning rounded-5"
-                href="mailto:njwright92@gmail.com">
-                <i
-                  className="fa fa-address-card fa-lg text-secondary">
-                </i>
-                Njwright92@gmail.com
+                style={{
+                  fontSize: '1em',
+                  width: '50%',
+                  margin: 'auto',
+                  boxShadow: '4px 4px 8px white'
+                }}
+
+              >
+                <i className="fa fa-address-card fa-lg text-dark" style={{ marginRight: '.3em' }}></i>
+                <a href="mailto:njwright92@gmail.com" className="text-dark"> Email Me!</a>
               </Button>
             </Card>
           </Col>
