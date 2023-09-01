@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/paper-kit-portfolio/static/css/main.c683da4e.css",
-    "main.js": "/paper-kit-portfolio/static/js/main.a2411bc6.js",
+    "main.css": "/paper-kit-portfolio/static/css/main.576bebd9.css",
+    "main.js": "/paper-kit-portfolio/static/js/main.a6da6ddf.js",
     "static/media/brewing.gif": "/paper-kit-portfolio/static/media/brewing.9b560256a7f49c052661.gif",
     "static/media/jetPack.gif": "/paper-kit-portfolio/static/media/jetPack.4f4c0f91909ff71e2c1e.gif",
     "static/media/nys.gif": "/paper-kit-portfolio/static/media/nys.de9ac1cb1025a4c2876b.gif",
@@ -19,12 +19,12 @@
     "static/media/fog-low.png": "/paper-kit-portfolio/static/media/fog-low.965eab52c95e117d1d45.png",
     "static/media/comedify.jpeg": "/paper-kit-portfolio/static/media/comedify.fb43e58870b42487f28a.jpeg",
     "static/media/flinstone.jpg": "/paper-kit-portfolio/static/media/flinstone.cbb7c6330667ac710e3a.jpg",
-    "static/media/resumeIT.pdf": "/paper-kit-portfolio/static/media/resumeIT.96b2e9fef3ec4f9a666f.pdf",
+    "static/media/resume.pdf": "/paper-kit-portfolio/static/media/resume.3b17f3f7016b6b5e81f2.pdf",
     "static/media/clem-onojeghuo-2.jpg": "/paper-kit-portfolio/static/media/clem-onojeghuo-2.d16702ce00aa38f275c0.jpg",
     "static/media/ayo-ogunseinde-2.jpg": "/paper-kit-portfolio/static/media/ayo-ogunseinde-2.f4af8f2c98f6968c5ae9.jpg",
+    "static/media/me.jpg": "/paper-kit-portfolio/static/media/me.83959b47c18154eb40b1.jpg",
     "static/media/joe-gardner-2.jpg": "/paper-kit-portfolio/static/media/joe-gardner-2.09841708956117e93a7b.jpg",
     "static/media/clem-onojeghuo-3.jpg": "/paper-kit-portfolio/static/media/clem-onojeghuo-3.83003f446b7372176b72.jpg",
-    "static/media/me.jpg": "/paper-kit-portfolio/static/media/me.3e29b66e9abf6f5fc2ba.jpg",
     "static/media/erik-lucatero-2.jpg": "/paper-kit-portfolio/static/media/erik-lucatero-2.d09715abe0463c58d6be.jpg",
     "static/media/nucleo-icons.eot": "/paper-kit-portfolio/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
     "static/media/nucleo-icons.ttf": "/paper-kit-portfolio/static/media/nucleo-icons.4466aeec3386b965a232.ttf",
@@ -33,7 +33,7 @@
     "index.html": "/paper-kit-portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.c683da4e.css",
-    "static/js/main.a2411bc6.js"
+    "static/css/main.576bebd9.css",
+    "static/js/main.a6da6ddf.js"
   ]
 }
