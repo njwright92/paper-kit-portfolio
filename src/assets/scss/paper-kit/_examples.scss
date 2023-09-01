@@ -186,10 +186,26 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.presentation-subtitle{
+
+.presentation-subtitle {
     font-size: 1.7em;
     color: #FFFFFF;
-}
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block; /* Added this */
+    animation: typing 6s steps(40) infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
 
 .category-absolute{
     position: absolute;

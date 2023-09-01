@@ -2543,23 +2543,23 @@ input[type=file] > input[type=button]::-moz-focus-inner {
 }
 
 .bg-primary {
-  background-color: #6dd3d6 !important;
+  background-color: rgba(245, 245, 245, 0.831372549);
 }
 
 .bg-info {
-  background-color: #6ec7e0 !important;
+  background-color: rgba(245, 245, 245, 0.831372549);
 }
 
 .bg-success {
-  background-color: #86d9ab !important;
+  background-color: rgba(245, 245, 245, 0.831372549);
 }
 
 .bg-warning {
-  background-color: #fcd27b !important;
+  background-color: rgba(245, 245, 245, 0.831372549);
 }
 
 .bg-danger {
-  background-color: #f7765f !important;
+  background-color: rgba(245, 245, 245, 0.831372549);
 }
 
 .wrapper {
@@ -3529,7 +3529,7 @@ License - nucleoapp.com/license/
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   padding: 0;
-  background: #f5f5f5d4;
+  background: #FFFFFF;
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 }
 .navbar .navbar-brand {
@@ -4586,7 +4586,7 @@ License - nucleoapp.com/license/
 }
 
 .section-dark .icons-container {
-  color: #A8D5BA;
+  color: #FFFFFF;
 }
 
 .info .icon {
@@ -5575,8 +5575,20 @@ License - nucleoapp.com/license/
 .presentation-subtitle {
   font-size: 1.7em;
   color: #FFFFFF;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block; /* Added this */
+  animation: typing 6s steps(40) infinite;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 .category-absolute {
   position: absolute;
   text-align: center;
