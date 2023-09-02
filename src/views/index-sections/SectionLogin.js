@@ -47,7 +47,7 @@ const ChatBot = () => {
   };
 
   return (
-    <div className="form-container text-center">
+    <div className="form-container text-center align-items-center justify-content-center">
       <Row>
         <Col md="12">
           <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "4em", textShadow: "2px 2px 4px #000000" }}>
@@ -58,20 +58,22 @@ const ChatBot = () => {
         <Col md="12">
           {step < questions.length ? (
             <>
-              <FormGroup className='mx-auto p-1'>
+              <FormGroup className='mx-auto p-1 align-items-center justify-content-center'>
                 <Row className='mx-auto p-1 m-1 align-items-center justify-content-center'>
                   <Col md="auto">
                     <Label htmlFor={questions[step].id} style={{ color: 'black' }}>
                       <h4><strong>{questions[step].text}</strong></h4>
                     </Label>
+
                     <textarea
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
-                      className='form-control'
+                      className='form-control mx-auto p-1 m-1 align-items-center justify-content-center'
                       rows="5"
                       style={{ width: '50vw' }}
                     >
                     </textarea>
+
                   </Col>
                 </Row>
                 <Row className="mt-3 align-items-center justify-content-center">
@@ -80,7 +82,7 @@ const ChatBot = () => {
                       className="btn-lg btn-round btn-primary text-dark"
                       style={{
                         fontSize: '1em',
-                        width: '100%',
+                        width: '50%',
                         boxShadow: '4px 4px 8px black'
                       }}
                       onClick={handleNext}
