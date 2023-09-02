@@ -42,15 +42,33 @@ const SectionButtons = () => {
         </Row>
         <Row className="align-items-center">
           <Col className="text-center mb-2 mt-2" id="gif_game">
-            <Button type='submit' id='game-button' color='danger' className="btn btn-lg" onClick={gifGame}>Show GIF</Button>
-            <p className="text-dark" style={{ marginTop: '1em', fontSize: '1.5em', fontWeight: 'bold' }}>
-              <i className="fa fa-arrow-up fa-pulse" aria-hidden="true" /> Guessing Game!
+            <Button
+              id='game-button'
+              color='danger'
+              className="btn btn-lg btn-round"
+              style={{
+                fontSize: '1em',
+                margin: 'auto',
+                boxShadow: '4px 4px 8px white'
+              }}
+              onClick={gifGame}>Show GIF
+            </Button>
+            <p className="text-dark"
+              style={{ marginTop: '1em', fontSize: '1.5em', fontWeight: 'bold' }}>
+              <i
+                className="fa fa-arrow-up fa-pulse"
+                aria-hidden="true"
+              /> Guessing Game!
             </p>
           </Col>
         </Row>
         <Row className="align-items-center justify-content-center">
           <Col xs={12} md={6} className="text-center mb-2 mt-4">
-            <img src={nys} alt="logo" style={{ borderRadius: '25%', boxShadow: "0 0 1em rgba(0,0,0,0.5)", maxWidth: '27em' }} />
+            <img
+              src={nys}
+              alt="logo"
+              style={{ borderRadius: '25%', boxShadow: "0 0 1em rgba(0,0,0,0.5)", maxWidth: '27em' }}
+            />
           </Col>
           <Col xs={12} md={6} className="text-center mb-2 mt-4">
             <Card className="bg-secondary rounded-5">
@@ -61,17 +79,16 @@ const SectionButtons = () => {
                 </CardText>
               </CardBody>
               <Button
-                className="btn-warning rounded-5"
+                className="btn-warning btn-lg btn-round text-dark"
                 style={{
                   fontSize: '1em',
-                  width: '50%',
                   margin: 'auto',
-                  boxShadow: '4px 4px 8px white'
+                  boxShadow: '4px 4px 8px white',
+                  marginBottom: '.5em'
                 }}
-
+                href="mailto:njwright92@gmail.com"
               >
-                <i className="fa fa-address-card fa-lg text-dark" style={{ marginRight: '.3em' }}></i>
-                <a href="mailto:njwright92@gmail.com" className="text-dark"> Email Me!</a>
+                <i className="fa fa-address-card fa-lg text-dark" style={{ marginRight: '.3em', }}></i> Email Me
               </Button>
             </Card>
           </Col>
