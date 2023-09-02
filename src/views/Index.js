@@ -26,9 +26,16 @@ import SectionLogin from "views/index-sections/SectionLogin.js";
 import SectionExamples from "views/index-sections/SectionExamples.js";
 import BackToTop from "components/backToTop";
 import RunningStream from "utils/runningStream";
+import { Scrollama, Step } from 'react-scrollama';
 
 function Index() {
   const [showGif, setShowGif] = useState(true);
+  // eslint-disable-next-line
+  const [currentStepIndex, setCurrentStepIndex] = useState(null);
+
+  const onStepEnter = ({ data }) => {
+    setCurrentStepIndex(data);
+  };
 
   return (
     <>
@@ -46,59 +53,71 @@ function Index() {
       )}
       <div className="main">
         <BackToTop />
-        <div id="section-buttons">
-          <SectionButtons />
-        </div>
-        {showGif ? (
-          <img
-            src="https://usagif.com/wp-content/uploads/gifs/water-43.gif"
-            alt="Running stream"
-            style={{ width: '100%', height: '3.5em' }}
-            onError={() => setShowGif(false)}
-          />
-        ) : (
-          <RunningStream />
-        )}
-        <div id="section-examples">
-          <SectionExamples />
-        </div>
-        {showGif ? (
-          <img
-            src="https://usagif.com/wp-content/uploads/gifs/water-43.gif"
-            alt="Running stream"
-            style={{ width: '100%', height: '3.5em' }}
-            onError={() => setShowGif(false)}
-          />
-        ) : (
-          <RunningStream />
-        )}
-        <div id="section-carousel">
-          <SectionCarousel />
-        </div>
-        {showGif ? (
-          <img
-            src="https://usagif.com/wp-content/uploads/gifs/water-43.gif"
-            alt="Running stream"
-            style={{ width: '100%', height: '3.5em' }}
-            onError={() => setShowGif(false)}
-          />
-        ) : (
-          <RunningStream />
-        )}
-        <div id="section-login">
-          <SectionLogin />
-        </div>
-        {showGif ? (
-          <img
-            src="https://usagif.com/wp-content/uploads/gifs/water-43.gif"
-            alt="Running stream"
-            style={{ width: '100%', height: '3.5em' }}
-            onError={() => setShowGif(false)}
-          />
-        ) : (
-          <RunningStream />
-        )}
-        <DemoFooter />
+        <Scrollama offset={0.3} onStepEnter={onStepEnter}>
+          <Step data={1}>
+            <div id="section-buttons">
+              <SectionButtons />
+            </div>
+          </Step>
+          {showGif ? (
+            <img
+              src="https://usagif.com/wp-content/uploads/gifs/water-43.gif"
+              alt="Running stream"
+              style={{ width: '100%', height: '3.5em' }}
+              onError={() => setShowGif(false)}
+            />
+          ) : (
+            <RunningStream />
+          )}
+          <Step data={2}>
+            <div id="section-examples">
+              <SectionExamples />
+            </div>
+          </Step>
+          {showGif ? (
+            <img
+              src="https://usagif.com/wp-content/uploads/gifs/water-43.gif"
+              alt="Running stream"
+              style={{ width: '100%', height: '3.5em' }}
+              onError={() => setShowGif(false)}
+            />
+          ) : (
+            <RunningStream />
+          )}
+          <Step data={3}>
+            <div id="section-carousel">
+              <SectionCarousel />
+            </div>
+          </Step>
+          {showGif ? (
+            <img
+              src="https://usagif.com/wp-content/uploads/gifs/water-43.gif"
+              alt="Running stream"
+              style={{ width: '100%', height: '3.5em' }}
+              onError={() => setShowGif(false)}
+            />
+          ) : (
+            <RunningStream />
+          )}
+          <Step data={4}>
+            <div id="section-login">
+              <SectionLogin />
+            </div>
+          </Step>
+          {showGif ? (
+            <img
+              src="https://usagif.com/wp-content/uploads/gifs/water-43.gif"
+              alt="Running stream"
+              style={{ width: '100%', height: '3.5em' }}
+              onError={() => setShowGif(false)}
+            />
+          ) : (
+            <RunningStream />
+          )}
+
+          <DemoFooter />
+
+        </Scrollama>
       </div>
     </>
   );

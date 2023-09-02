@@ -11,6 +11,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
     "react-scripts": "^5.0.1",
+    "react-scrollama": "^2.3.2",
     "reactstrap": "^9.2.0",
     "sass": "^1.66.1",
     "svgo": "^3.0.2"
