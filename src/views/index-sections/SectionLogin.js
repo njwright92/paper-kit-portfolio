@@ -82,7 +82,7 @@ const ChatBot = () => {
                       className="btn-lg btn-round btn-primary text-dark"
                       style={{
                         fontSize: '1em',
-                        width: '50%',
+                        
                         boxShadow: '4px 4px 8px black'
                       }}
                       onClick={handleNext}
