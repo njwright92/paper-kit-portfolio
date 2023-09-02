@@ -2247,7 +2247,7 @@ textarea.form-control {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
 }
 
@@ -2308,7 +2308,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .footer-big h5,
 .footer-big h4,
 .media .media-heading {
-  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .title,
 .title a,
@@ -2426,7 +2426,7 @@ body {
   color: #66615b;
   font-size: 14px;
   font-weight: 300;
-  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 a {
@@ -5559,7 +5559,7 @@ License - nucleoapp.com/license/
 }
 
 .presentation-title {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: 500;
   margin: 0;
   color: #FFFFFF;

@@ -23,7 +23,7 @@ import React,
   useEffect
 }
   from "react";
-import resume from '../../assets/img/resume.pdf';
+import resume from '../../assets/img/resumeIT.pdf';
 import {
   Collapse,
   Navbar,

@@ -29,3 +29,8 @@
     width: 100%
   }
 }
+
+.project-description {
+  font-size: 1.2em; /* Adjust the size as you see fit */
+  line-height: 1.5; /* Improve readability with some line height */
+}

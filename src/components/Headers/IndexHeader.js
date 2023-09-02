@@ -34,13 +34,13 @@ function IndexHeader() {
         <div className="filter" />
         <div className="content-center">
           <Container>
-            <h2 className="presentation-subtitle text-center">
+            <h3 className="text-center text-white">
               <em>
                 Nathan John Wright
               </em>
-            </h2>
+            </h3>
             <div className="title-brand">
-              <h1 className="presentation-title">"Showcase"</h1>
+              <h1 className="presentation-title">Code Showcase</h1>
               <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>

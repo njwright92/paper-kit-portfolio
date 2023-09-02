@@ -20,7 +20,7 @@ import React from "react";
 import { Container, Row, Col, Button, Card, CardBody, CardTitle, CardText } from "reactstrap";
 import nys from '../../assets/img/nys.gif';
 import gifGame from "../../utils/gifGame.js";
-import resume from '../../assets/img/resume.pdf';
+import resume from '../../assets/img/resumeIT.pdf';
 
 const SectionButtons = () => {
   return (

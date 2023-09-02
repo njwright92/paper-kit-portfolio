@@ -87,7 +87,8 @@
 
 .demo-icons body {
   font-size: 1.6rem;
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
   color: #333333;
   background: white;
 }

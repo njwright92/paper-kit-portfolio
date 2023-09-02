@@ -27,7 +27,7 @@ import {
   Nav,
   Container,
 } from "reactstrap";
-import resume from '../../assets/img/resume.pdf';
+import resume from '../../assets/img/resumeIT.pdf';
 
 function IndexNavbar() {
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -114,7 +114,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="add me on linkedin"
               >
-                <i className="fab fa-lg fa-linkedin" />
+                <i className="fa fa-lg fa-linkedin" />
                 <p className="d-lg-none"> Linkedin</p>
               </NavLink>
             </NavItem>

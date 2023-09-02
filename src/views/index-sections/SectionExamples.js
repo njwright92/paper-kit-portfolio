@@ -38,27 +38,48 @@ function SectionExamples() {
           <Row className="example-page">
             <Col className="text-center" md="6">
               <Button
-                className="btn-lg btn-round"
+                className="btn-lg btn-round mb-3"
                 color="primary"
                 href="https://slapshot16.com">
                 <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i> SlapShot16
               </Button>
-              <a href="https://slapshopt16.com">
-                <img
-                  alt="..."
-                  className="img-rounded img-responsive"
-                  src={require("assets/img/ssMenu.jpg")}
-                  style={{ width: "77%" }}
-                />
-              </a>
+
+              <div className="project-description" style={{ fontSize: '1.2em', lineHeight: '1.5' }}>
+                <span role="img" aria-label="hockey-stick">🏒</span>
+                <strong style={{ fontSize: '1.3em' }}> Hockey Themed Food Truck Website</strong>
+                <br />
+                <em>Technologies:</em> HTML5, CSS3, Bootstrap
+                <br />
+                <em>Deployment:</em> Netlify
+                <br />
+                <strong>Overview:</strong>
+                <br />
+                This project is my first website and serves as a digital home for a hockey-themed food truck. The site features a menu, image gallery, and text ordering capabilities.
+              </div>
+              <img
+                alt="..."
+                className="img-rounded img-responsive"
+                src={require("assets/img/ssMenu.jpg")}
+                style={{ width: "77%" }}
+              />
             </Col>
             <Col className="text-center" md="6">
               <Button
-                className="btn-lg btn-pill"
+                className="btn-lg btn-pill mb-3"
                 color="warning"
                 href="https://nativeprotracker.com">
                 <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i> NativeProTracker
               </Button>
+              <div style={{ fontSize: '1.2em', lineHeight: '1.5' }}>
+                <span role="img" aria-label="chart">📈</span>
+                <strong style={{ fontSize: '1.3em' }}> Production Tracking App</strong>
+                <br />
+                <em>Technologies:</em> Google Cloud, Firebase, Expo-React-Native, Redux
+                <br />
+                <strong>Overview:</strong>
+                <br />
+                I'm thrilled to introduce Native Pro Tracker, my innovative, scalable mobile app set to revolutionize task and product management. Capitalizing on the power of Google Cloud, Firebase, and Firestore DB, I've created an app that offers real-time data handling and top-notch security.
+              </div>
               <a href="https://nativeprotracker.com">
                 <img
                   alt="..."
@@ -71,29 +92,39 @@ function SectionExamples() {
           </Row>
           <Row className="example-page justify-content-center">
             <Col className="text-center">
-              <h3 style={{ margin: '.3em' }}>
-                <strong>Meet Comedify:</strong>
-              </h3>
-              <h5 style={{ marginBottom: '1px' }}>"Your AI-powered sidekick for cracking up the room. Currently under construction! Coming soon!"</h5>
               <Button
-                className="btn-lg btn-pill"
+                className="btn-lg btn-pill mb-3"
                 color="dark"
                 href="https://github.com/njwright92/comedify"
-                style={{ marginLeft: '1em', marginBottom: '0' }}
               >
-                <p>Checkout the Github Repo</p>
+                <i className="fa fa-lg fa-smile-o" aria-hidden="true"></i> Comedify
               </Button>
-              <img
-                alt="..."
-                className="img-rounded img-responsive"
-                src={require("assets/img/comedify.jpeg")}
-                style={{ width: "77%", marginLeft: '1em', marginTop: '1em' }}
-              />
+              <div style={{ fontSize: '1.2em', lineHeight: '1.5' }}>
+                <span role="img" aria-label="microphone">🎤</span>
+                <strong style={{ fontSize: '1.3em' }}> Meet Comedify:</strong>
+                <br />
+                <em>Status:</em> Under Construction
+                <br />
+                <em>Technologies:</em> Next.js, React, Firebase, Hugging Face, JavaScript, Python
+                <br />
+                <strong>Overview:</strong>
+                <br />
+                Your AI-powered sidekick for cracking up the room. Currently under construction! Coming soon!
+              </div>
+              <a href="https://github.com/njwright92/comedify">
+                <img
+                  alt="..."
+                  className="img-rounded img-responsive"
+                  src={require("assets/img/comedify.jpeg")}
+                  style={{ width: "77%" }}
+                />
+              </a>
             </Col>
+
           </Row>
 
         </Container>
-      </div>{" "}
+      </div > {" "}
     </>
   );
 }
