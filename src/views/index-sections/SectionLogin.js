@@ -1,153 +1,115 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import React from "react";
-import { Button, Label, Col, FormGroup } from 'reactstrap';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import { validateContactForm } from "utils/validateContactForm";
+import React, { useState } from 'react';
+import { Button, Col, FormGroup, Label, Row } from 'reactstrap';
 import '../../assets/css/SectionLogin.css'; // Import the custom CSS file
 
-const SectionLogin = () => {
-  const handleSubmit = (values, { resetForm }) => {
-    alert('Thank you, I have received your request!');
-    fetch('njwright92@gmail.com-script.php', {
-      method: 'POST',
-      body: JSON.stringify(values),
-    });
-    resetForm();
+
+const ChatBot = () => {
+  const [step, setStep] = useState(0);
+  const [answers, setAnswers] = useState({});
+  const [inputValue, setInputValue] = useState('');  // <-- Use an empty string here
+
+
+  const questions = [
+    { id: 'siteName', text: 'What do you want the name of your site/app to be?' },
+    { id: 'siteType', text: 'What type of website or app do you want? What\'s the goal of the site?' },
+    { id: 'budget', text: 'What is your budget?' },
+    { id: 'siteStyle', text: 'What colors, style, and functionality do you want the site to have?' },
+    { id: 'deadline', text: 'When do you want it to be ready?' },
+    { id: 'additionalInfo', text: 'Anything else you want me to know about your site?' },
+  ];
+
+  const handleNext = () => {
+    setAnswers({ ...answers, [questions[step].id]: inputValue });
+    setInputValue(''); // Clear the input field
+
+    if (step < questions.length - 1) {
+      setStep(step + 1);
+    } else {
+      setStep(step + 1); // Move past the last question
+    }
+  };
+
+  const composeEmailLink = () => {
+    const subject = encodeURIComponent('New Site Request');
+    const body = encodeURIComponent(
+      `Site Name: ${answers.siteName}\n` +
+      `Site Type and Goal: ${answers.siteType}\n` +
+      `Budget: ${answers.budget}\n` +
+      `Site Style: ${answers.siteStyle}\n` +
+      `Deadline: ${answers.deadline}\n` +
+      `Additional Info: ${answers.additionalInfo}`
+    );
+    return `mailto:njwright92@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
     <div className="form-container text-center">
-
-      <Formik
-        initialValues={{
-          firstName: '',
-          lastName: '',
-          phoneNum: '',
-          email: '',
-          feedback: '',
-        }}
-        onSubmit={handleSubmit}
-        validate={validateContactForm}
-      >
-        <Form className="p-1">
-          <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "4em", textShadow: "2px 2px 4px #000000" }}>Site request form</h1>
-          <FormGroup row>
-            <Label htmlFor='firstName' md='2' style={{ color: 'black' }}>
-              <strong>First Name</strong>
-            </Label>
-            <Col md="10">
-              <Field
-                name='firstName'
-                placeholder='First Name'
-                className='form-control'
-              />
-              <ErrorMessage name='firstName'>
-                {(msg) => <p className='text-danger'>{msg}</p>}
-              </ErrorMessage>
-            </Col>
-          </FormGroup>
-
-          <FormGroup row>
-            <Label htmlFor='lastName' md='2' style={{ color: 'black' }}>
-              <strong>Last Name</strong>
-            </Label>
-            <Col md="10">
-              <Field
-                name='lastName'
-                placeholder='Last Name'
-                className='form-control'
-              />
-              <ErrorMessage name='lastName'>
-                {(msg) => <p className='text-danger'>{msg}</p>}
-              </ErrorMessage>
-            </Col>
-          </FormGroup>
-
-          <FormGroup row>
-            <Label htmlFor='phoneNum' md='2' style={{ color: 'black' }}>
-              <strong>Phone</strong>
-            </Label>
-            <Col md="10">
-              <Field
-                name='phoneNum'
-                placeholder='Phone'
-                className='form-control'
-              />
-              <ErrorMessage name='phoneNum'>
-                {(msg) => <p className='text-danger'>{msg}</p>}
-              </ErrorMessage>
-            </Col>
-          </FormGroup>
-
-          <FormGroup row>
-            <Label htmlFor='email' md='2' style={{ color: 'black' }}>
-              <strong>Email</strong>
-            </Label>
-            <Col md="10">
-              <Field
-                name='email'
-                placeholder='Email'
-                type='email'
-                className='form-control'
-              />
-              <ErrorMessage name='email'>
-                {(msg) => <p className='text-danger'>{msg}</p>}
-              </ErrorMessage>
-            </Col>
-          </FormGroup>
-
-          <FormGroup row>
-            <Label htmlFor='feedback' md='2' style={{ color: 'black' }}>
-              <strong>Your Site Request</strong>
-            </Label>
-            <Col md="10">
-              <Field
-                name='feedback'
-                as='textarea'
-                rows='12'
-                className='form-control'
-                placeholder='enter details for the app or site you want created here'
-              />
-            </Col>
-          </FormGroup>
-          <FormGroup row>
-            <Col md={{ size: 10, offset: 4 }}>
+      <Row>
+        <Col md="12">
+          <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "4em", textShadow: "2px 2px 4px #000000" }}>
+            Site Request Form
+          </h1>
+          <h4 className='text-black mb-3'>I'm collecting info to understand your needs. Please answer the following questions.</h4>
+        </Col>
+        <Col md="12">
+          {step < questions.length ? (
+            <>
+              <FormGroup className='mx-auto p-1'>
+                <Row className='mx-auto p-1 m-1 align-items-center justify-content-center'>
+                  <Col md="auto">
+                    <Label htmlFor={questions[step].id} style={{ color: 'black' }}>
+                      <h4><strong>{questions[step].text}</strong></h4>
+                    </Label>
+                    <textarea
+                      value={inputValue}
+                      onChange={(e) => setInputValue(e.target.value)}
+                      className='form-control'
+                      rows="5"
+                      style={{ width: '50vw' }}
+                    >
+                    </textarea>
+                  </Col>
+                </Row>
+                <Row className="mt-3 align-items-center justify-content-center">
+                  <Col md="auto">
+                    <Button
+                      className="btn-lg btn-round btn-primary text-dark"
+                      style={{
+                        fontSize: '1em',
+                        width: '100%',
+                        boxShadow: '4px 4px 8px black'
+                      }}
+                      onClick={handleNext}
+                    >
+                      Submit
+                    </Button>
+                  </Col>
+                </Row>
+              </FormGroup>
+              {inputValue && <p className="text-black mb-3">Your response has been recorded.</p>} {/* Added mb-3 */}
+            </>
+          ) : (
+            <>
+              <h4 className="mb-3">Thanks for answering the questions! Click the button below to send your site request.</h4>
               <Button
-                className="btn-lg btn-round text-black"
-                type='submit'
-                color='primary'
+                className="btn-lg btn-round btn-primary text-dark"
                 style={{
                   fontSize: '1em',
                   margin: 'auto',
-                  boxShadow: '4px 4px 8px white'
+                  boxShadow: '4px 4px 8px black',
+                  marginBottom: '.5em'
                 }}
+                href={composeEmailLink()}
               >
-                Send Request
+                Email Me Your Site Request
               </Button>
-            </Col>
-          </FormGroup>
-
-        </Form>
-      </Formik>
-    </div>
+            </>
+          )}
+        </Col>
+      </Row>
+    </div >
   );
+
 };
 
-export default SectionLogin;
+export default ChatBot;
