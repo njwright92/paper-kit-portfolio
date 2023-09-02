@@ -55,6 +55,7 @@ function IndexNavbar() {
             <span className="navbar-toggler-bar bar2" />
             <span className="navbar-toggler-bar bar3" />
             <span className="navbar-toggler-bar bar4" />
+            <span className="navbar-toggler-bar bar5" />
           </button>
         </div>
         <Collapse
@@ -62,7 +63,7 @@ function IndexNavbar() {
           navbar
           isOpen={navbarCollapse}
         >
-          <Nav white-navbar className="justify-content-center">
+          <Nav white-navbar className="align-items-center justify-content-center">
             <NavItem>
               <NavLink
                 data-placement="bottom"
@@ -142,7 +143,7 @@ function IndexNavbar() {
             </NavItem>
             <NavItem>
               <Button
-                className="btn-pill"
+                className="btn-round"
                 color="success"
                 href="nativeprotracker.com/"
                 target="_blank"

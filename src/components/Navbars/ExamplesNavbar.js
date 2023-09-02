@@ -148,7 +148,7 @@ function ExamplesNavbar() {
             </NavItem>
             <NavItem>
               <Button
-                className="btn-pill"
+                className="btn-round"
                 color="success"
                 href="https://nativeprotracker.com/"
                 target="_blank"

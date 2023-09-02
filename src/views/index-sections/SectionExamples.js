@@ -38,8 +38,13 @@ function SectionExamples() {
           <Row className="example-page">
             <Col className="text-center" md="6">
               <Button
-                className="btn-lg btn-round mb-3"
+                className="btn-lg btn-round mb-3 text-black"
                 color="primary"
+                style={{
+                  fontSize: '1em',
+                  margin: 'auto',
+                  boxShadow: '4px 4px 8px white'
+                }}
                 href="https://slapshot16.com">
                 <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i> SlapShot16
               </Button>
@@ -65,8 +70,13 @@ function SectionExamples() {
             </Col>
             <Col className="text-center" md="6">
               <Button
-                className="btn-lg btn-pill mb-3"
+                className="btn-lg btn-round mb-3 text-black"
                 color="warning"
+                style={{
+                  fontSize: '1em',
+                  margin: 'auto',
+                  boxShadow: '4px 4px 8px white'
+                }}
                 href="https://nativeprotracker.com">
                 <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i> NativeProTracker
               </Button>
@@ -93,8 +103,13 @@ function SectionExamples() {
           <Row className="example-page justify-content-center">
             <Col className="text-center">
               <Button
-                className="btn-lg btn-pill mb-3"
+                className="btn-lg btn-round mb-3"
                 color="dark"
+                style={{
+                  fontSize: '1em',
+                  margin: 'auto',
+                  boxShadow: '4px 4px 8px white'
+                }}
                 href="https://github.com/njwright92/comedify"
               >
                 <i className="fa fa-lg fa-smile-o" aria-hidden="true"></i> Comedify

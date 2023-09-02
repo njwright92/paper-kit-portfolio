@@ -129,7 +129,16 @@ const SectionLogin = () => {
           </FormGroup>
           <FormGroup row>
             <Col md={{ size: 10, offset: 4 }}>
-              <Button type='submit' color='primary'>
+              <Button
+                className="btn-lg btn-round text-black"
+                type='submit'
+                color='primary'
+                style={{
+                  fontSize: '1em',
+                  margin: 'auto',
+                  boxShadow: '4px 4px 8px white'
+                }}
+              >
                 Send Request
               </Button>
             </Col>

@@ -18,7 +18,7 @@
 */
 /*eslint-disable*/
 import React from "react";
-import { Row, Container } from "reactstrap";
+import { Row, Container, Button } from "reactstrap";
 
 function DemoFooter() {
   return (
@@ -30,20 +30,30 @@ function DemoFooter() {
               <strong>Contact Info</strong>
             </h3>
             <p>Nathan J. Wright currently located in Coeur D'Alene, Idaho.</p>
-            <a
+            <Button
+              style={{
+                fontSize: '1em',
+                margin: 'auto',
+                boxShadow: '4px 4px 8px black'
+              }}
               role="button"
-              className="btn btn-info rounded-5 m-1"
+              className="btn-lg btn-round btn-info m-1"
               href="mailto:njwright92@gmail.com"
             >
               Email!
-            </a>
-            <a
+            </Button>
+            <Button
+              style={{
+                fontSize: '1em',
+                margin: 'auto',
+                boxShadow: '4px 4px 8px black'
+              }}
               role="button"
-              className="btn btn-warning rounded-5 m-1"
+              className="btn-lg btn-round btn-warning m-1"
               href="sms:12082550140"
             >
               Phone!
-            </a>
+            </Button>
           </nav>
         </Row>
         <Row className="align-items-center justify-content-center">
