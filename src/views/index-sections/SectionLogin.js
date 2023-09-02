@@ -10,8 +10,10 @@ const ChatBot = () => {
 
 
   const questions = [
+    { id: 'yourName', text: 'What is your name?' },
+    { id: 'contactInfo', text: 'What is your contact information?' },
     { id: 'siteName', text: 'What do you want the name of your site/app to be?' },
-    { id: 'siteType', text: 'What type of website or app do you want? What\'s the goal of the site?' },
+    { id: 'siteType', text: 'What type of website or app do you want?' },
     { id: 'budget', text: 'What is your budget?' },
     { id: 'siteStyle', text: 'What colors, style, and functionality do you want the site to have?' },
     { id: 'deadline', text: 'When do you want it to be ready?' },
@@ -20,18 +22,20 @@ const ChatBot = () => {
 
   const handleNext = () => {
     setAnswers({ ...answers, [questions[step].id]: inputValue });
-    setInputValue(''); // Clear the input field
+    setInputValue('');
 
     if (step < questions.length - 1) {
       setStep(step + 1);
     } else {
-      setStep(step + 1); // Move past the last question
+      setStep(step + 1);
     }
   };
 
   const composeEmailLink = () => {
     const subject = encodeURIComponent('New Site Request');
     const body = encodeURIComponent(
+      `Your Name: ${answers.yourName}\n` +
+      `Contact Info: ${answers.contactInfo}\n` +
       `Site Name: ${answers.siteName}\n` +
       `Site Type and Goal: ${answers.siteType}\n` +
       `Budget: ${answers.budget}\n` +
@@ -47,9 +51,9 @@ const ChatBot = () => {
       <Row>
         <Col md="12">
           <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "4em", textShadow: "2px 2px 4px #000000" }}>
-            Site Request Form
+            Site Request!
           </h1>
-          <h4 className='text-black mb-3'>I'm collecting info to understand your needs. Please answer the following questions.</h4>
+          <h4 className='text-black mb-3'>I'm collecting information to understand your needs. Please answer the following questions.</h4>
         </Col>
         <Col md="12">
           {step < questions.length ? (
@@ -90,7 +94,8 @@ const ChatBot = () => {
             </>
           ) : (
             <>
-              <h4 className="mb-3">Thanks for answering the questions! Click the button below to send your site request.</h4>
+              <h4 className="mb-1">Thanks for answering the questions! Click the button below to email me your site request with the information you provided.
+              </h4>
               <Button
                 className="btn-lg btn-round btn-primary text-dark"
                 style={{
@@ -101,7 +106,7 @@ const ChatBot = () => {
                 }}
                 href={composeEmailLink()}
               >
-                Email Me Your Site Request
+                Send Request!
               </Button>
             </>
           )}
