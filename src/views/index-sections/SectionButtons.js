@@ -75,8 +75,12 @@ const SectionButtons = () => {
               <CardBody>
                 <CardTitle tag="h1" className="text-center mb-2 p-1">Request a Site!</CardTitle>
                 <CardText className="text-center text-white mb-1 font-weight-bold">
-                  I enjoy developing websites and apps. Please submit your website or app request via email, or scroll to the bottom for the full form. I will promptly respond with an estimated completion time and cost.
+                  I enjoy developing websites and apps. You have two ways to get started on your project:<br />
+                  1. Send me an email with your site or app request.<br />
+                  2. Or simply scroll down to the bottom of this page to fill out a comprehensive questionnaire.<br />
+                  I'll get back to you promptly with an estimated completion time and cost.
                 </CardText>
+
               </CardBody>
               <Button
                 className="btn-warning btn-lg btn-round text-dark"
