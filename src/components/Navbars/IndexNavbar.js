@@ -65,6 +65,31 @@ function IndexNavbar() {
         >
           <Nav white-navbar className="align-items-center justify-content-center">
             <NavItem>
+              <NavLink href="#section-buttons" title="Go to Home">
+                <span role="img" aria-label="house" style={{ fontSize: '1.5em' }}>🏠</span>
+                <p className="d-lg-none"> Home</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#section-examples" title="Go to Projects">
+                <span role="img" aria-label="laptop" style={{ fontSize: '1.5em' }}>💻</span>
+                <p className="d-lg-none"> Projects</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#section-carousel" title="Go to Passions">
+                <span role="img" aria-label="snowflake" style={{ fontSize: '1.5em', color: '#0000FF' }}>❄️</span>
+                <p className="d-lg-none"> Passions</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#section-login" title="Go to Site Request">
+                <span role="img" aria-label="email" style={{ fontSize: '1.5em', color: '#0000FF' }}>✉️</span>
+                <p className="d-lg-none"> Site Request</p>
+              </NavLink>
+            </NavItem>
+
+            <NavItem>
               <NavLink
                 data-placement="bottom"
                 href="https://twitter.com/naterbug321"
