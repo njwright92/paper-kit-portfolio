@@ -52,9 +52,9 @@ function Index() {
       ) : (
         <RunningStream />
       )}
-      <div className="main" data-aos="fade-up">
+      <div className="main" >
         <BackToTop />
-        <div id="section-buttons">
+        <div id="section-buttons" data-aos="fade-up">
           <SectionButtons />
         </div>
         {showGif ? (

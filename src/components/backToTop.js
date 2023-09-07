@@ -15,7 +15,7 @@ const BackToTop = () => {
 
     const scrollToTop = () => {
         const scrollHeight = window.scrollY;
-        const scrollStep = Math.floor(scrollHeight / 100);
+        const scrollStep = Math.floor(scrollHeight / 50);
         const scrollInterval = setInterval(() => {
             if (window.scrollY !== 0) {
                 window.scrollBy(0, -scrollStep);
