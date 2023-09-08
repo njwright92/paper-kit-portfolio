@@ -41,7 +41,7 @@ function IndexNavbar() {
     <Navbar
       className="fixed-bottom"
       expand="lg"
-      style={{ backgroundColor: "#f5f5f5d4", marginBottom: '1px' }}
+      style={{ backgroundColor: "#f5f5f5d4" }}
     >
       <Container>
         <div className="navbar-translate">
@@ -63,7 +63,7 @@ function IndexNavbar() {
           navbar
           isOpen={navbarCollapse}
         >
-          <Nav white-navbar className="align-items-center justify-content-center">
+          <Nav className="white-navbar align-items-center justify-content-center">
             <NavItem>
               <NavLink href="#section-buttons" title="Go to Home">
                 <span role="img" aria-label="house" style={{ fontSize: '1.5em' }}>🏠</span>
