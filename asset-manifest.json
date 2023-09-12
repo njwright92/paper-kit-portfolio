@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/paper-kit-portfolio/static/css/main.5ecbc3f7.css",
-    "main.js": "/paper-kit-portfolio/static/js/main.1427d19d.js",
+    "main.css": "/paper-kit-portfolio/static/css/main.ccaf370d.css",
+    "main.js": "/paper-kit-portfolio/static/js/main.94ceb089.js",
     "static/media/brewing.gif": "/paper-kit-portfolio/static/media/brewing.9b560256a7f49c052661.gif",
     "static/media/jetPack.gif": "/paper-kit-portfolio/static/media/jetPack.4f4c0f91909ff71e2c1e.gif",
     "static/media/nys.gif": "/paper-kit-portfolio/static/media/nys.de9ac1cb1025a4c2876b.gif",
@@ -33,7 +33,7 @@
     "index.html": "/paper-kit-portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.5ecbc3f7.css",
-    "static/js/main.1427d19d.js"
+    "static/css/main.ccaf370d.css",
+    "static/js/main.94ceb089.js"
   ]
 }
