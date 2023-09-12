@@ -19,6 +19,7 @@
 /*eslint-disable*/
 import React from "react";
 import { Container } from "reactstrap";
+import '../../assets/css/styles.css';
 
 
 function IndexHeader() {
@@ -39,11 +40,20 @@ function IndexHeader() {
                 Nathan John Wright
               </em>
             </h3>
+            <div className="circle mx-auto">
+              <i className="fab fa-lg fa-js logo logo-js"></i>
+              <i className="fab fa-lg fa-react logo logo-react"></i>
+              <i className="fas fa-lg fa-mobile-alt logo logo-react-native"></i>
+              <i className="fab fa-lg fa-google logo logo-gcp"></i>
+              <i className="fab fa-lg fa-bootstrap logo logo-bootstrap"></i>
+              <i className="fab fa-lg fa-node-js logo logo-nodejs"></i>
+            </div>
             <div className="title-brand">
               <h1 className="presentation-title">Code Showcase</h1>
               <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
+
               <div className="fog-low right">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
@@ -53,9 +63,9 @@ function IndexHeader() {
                 "Your best investment is in yourself"
               </em>
             </h2>
-
           </Container>
         </div>
+
         <div
           className="moving-clouds"
           style={{
