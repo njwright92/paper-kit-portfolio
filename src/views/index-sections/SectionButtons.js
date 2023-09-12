@@ -21,6 +21,9 @@ import { Container, Row, Col, Button, Card, CardBody, CardTitle, CardText } from
 import nys from '../../assets/img/nys.gif';
 import gifGame from "../../utils/gifGame.js";
 import resume from '../../assets/img/resumeIT.pdf';
+import '../../assets/css/styles.css';
+
+
 
 const SectionButtons = () => {
   return (
@@ -31,6 +34,7 @@ const SectionButtons = () => {
             <h1 style={{ marginBottom: ".5em", fontWeight: "bold", color: "white", fontSize: "5em", textShadow: "2px 2px 4px #000000" }}>
               <strong>My ReactApp Portfolio</strong>
             </h1>
+
           </Col>
         </Row>
         <Row className="align-items-center">
@@ -38,6 +42,16 @@ const SectionButtons = () => {
             <a href={resume} target="_blank" rel="noopener noreferrer" style={{ color: '#000080', fontSize: '1.5em', fontWeight: 'bold' }}>
               <i className="fa fa-file-pdf-o fa-pulse" aria-hidden="true" /> View My Resume
             </a>
+            <div className="circle text-center d-flex justify-content-center align-items-center" style={{ animation: 'rotate 20s infinite linear' }}>
+              <i className="fab fa-js logo logo-js"></i>
+              <i className="fab fa-react logo logo-react"></i>
+              <i className="fas fa-mobile-alt logo logo-react-native"></i>
+              <i className="fab fa-google logo logo-gcp"></i>
+              <i className="fab fa-bootstrap logo logo-bootstrap"></i>
+              <i className="fab fa-node-js logo logo-nodejs"></i>
+            </div>
+
+
           </Col>
         </Row>
         <Row className="align-items-center">
@@ -92,7 +106,7 @@ const SectionButtons = () => {
                 }}
                 href="mailto:njwright92@gmail.com"
               >
-                <i className="fa fa-address-card fa-lg text-dark" style={{ marginRight: '.3em', }}></i> Email Me
+                <i className="fa fa-address-card  text-dark" style={{ marginRight: '.3em', }}></i> Email Me
               </Button>
             </Card>
           </Col>

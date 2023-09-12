@@ -31,6 +31,69 @@
 }
 
 .project-description {
-  font-size: 1.2em; /* Adjust the size as you see fit */
-  line-height: 1.5; /* Improve readability with some line height */
+  font-size: 1.2em;
+  /* Adjust the size as you see fit */
+  line-height: 1.5;
+  /* Improve readability with some line height */
+}
+
+.container {
+  position: relative;
+}
+
+.circle {
+  position: relative;
+  animation: rotate 20s infinite linear;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  font-size: 3em;
+  text-align: center;
+
+}
+
+.logo-js {
+  color: #f7df1e;
+  transform: rotate(0deg) translate(-50%, -50%) rotate(0deg);
+}
+
+.logo-react {
+  color: #61dafb;
+  transform: rotate(60deg) translate(-50%, -50%) rotate(-60deg);
+}
+
+.logo-react-native {
+  color: #61dafb;
+  transform: rotate(120deg) translate(-50%, -50%) rotate(-120deg);
+}
+
+.logo-gcp {
+  color: #4285f4;
+  transform: rotate(180deg) translate(-50%, -50%) rotate(-180deg);
+}
+
+.logo-bootstrap {
+  color: #563d7c;
+  transform: rotate(240deg) translate(-50%, -50%) rotate(-240deg);
+}
+
+.logo-nodejs {
+  color: #8cc84b;
+  transform: rotate(300deg) translate(-50%, -50%) rotate(-300deg);
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
