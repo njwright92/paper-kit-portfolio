@@ -22,34 +22,42 @@ import { Row, Container, Button } from "reactstrap";
 
 function DemoFooter() {
   return (
-    <footer className="footer" style={{ marginBottom: '7em' }}>
+    <footer className="footer" style={{ marginBottom: '4em' }}>
       <Container>
-        <Row>
-          <nav className="footer-nav">
+        <Row className="justify-content-center align-items-center">
+          <nav className="footer-nav text-center">
             <h3>
               <strong>Contact Info</strong>
             </h3>
             <p>Nathan J. Wright currently located in Coeur D'Alene, Idaho.</p>
             <Button
+              className="btn-lg btn-round m-1"
               style={{
                 fontSize: '1em',
                 margin: 'auto',
-                boxShadow: '4px 4px 8px black'
+                boxShadow: '4px 4px 8px white',
+                marginBottom: '.5em',
+                backgroundColor: '#007BFF',
+                color: 'white',
+                border: 'none'
               }}
-              role="button"
-              className="btn-lg btn-round btn-info m-1"
+              role='button'
               href="mailto:njwright92@gmail.com"
             >
               Email!
             </Button>
             <Button
+              className="btn-lg btn-round m-1"
               style={{
                 fontSize: '1em',
                 margin: 'auto',
-                boxShadow: '4px 4px 8px black'
+                boxShadow: '4px 4px 8px white',
+                marginBottom: '.5em',
+                backgroundColor: '#007BFF',
+                color: 'white',
+                border: 'none'
               }}
-              role="button"
-              className="btn-lg btn-round btn-warning m-1"
+              role='button'
               href="sms:12082550140"
             >
               Phone!
@@ -57,7 +65,7 @@ function DemoFooter() {
           </nav>
         </Row>
         <Row className="align-items-center justify-content-center">
-          <div className="credits">
+          <div className="credits text-center">
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
               <i className="fa fa-lg fa-heart heart" /> by Nathan Wright

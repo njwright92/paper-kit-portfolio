@@ -79,32 +79,39 @@ const ChatBot = () => {
                 <Row className="mt-3 align-items-center justify-content-center">
                   <Col md="auto">
                     <Button
-                      className="btn-lg btn-round btn-primary text-dark"
+                      className="btn-lg btn-round"
                       style={{
                         fontSize: '1em',
-                        
-                        boxShadow: '4px 4px 8px black'
+                        margin: 'auto',
+                        boxShadow: '4px 4px 8px white',
+                        marginBottom: '.5em',
+                        backgroundColor: '#007BFF',
+                        color: 'white',
+                        border: 'none'
                       }}
                       onClick={handleNext}
                     >
-                      Submit
+                      Next
                     </Button>
                   </Col>
                 </Row>
               </FormGroup>
-              {inputValue && <p className="text-black mb-3">Your response has been recorded.</p>} {/* Added mb-3 */}
+              {inputValue && <p className="text-black mb-3">Your response has been recorded.</p>}
             </>
           ) : (
             <>
               <h4 className="mb-1">Thanks for answering the questions! Click the button below to email me your site request with the information you provided.
               </h4>
               <Button
-                className="btn-lg btn-round btn-primary text-dark"
+                className="btn-lg btn-round"
                 style={{
                   fontSize: '1em',
                   margin: 'auto',
-                  boxShadow: '4px 4px 8px black',
-                  marginBottom: '.5em'
+                  boxShadow: '4px 4px 8px white',
+                  marginBottom: '.5em',
+                  backgroundColor: '#007BFF',
+                  color: 'white',
+                  border: 'none'
                 }}
                 href={composeEmailLink()}
               >

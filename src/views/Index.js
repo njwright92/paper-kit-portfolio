@@ -34,7 +34,7 @@ function Index() {
 
   useEffect(() => {
     AOS.init({
-      duration: 3000,
+      duration: 2000,
     });
   }, []);
 

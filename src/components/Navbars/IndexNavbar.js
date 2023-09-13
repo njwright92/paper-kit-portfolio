@@ -159,7 +159,14 @@ function IndexNavbar() {
             <NavItem>
               <Button
                 className="btn-round"
-                color="primary"
+                style={{
+                  fontSize: '1em',
+                  margin: '.3em',
+                  backgroundColor: '#007BFF',
+                  color: 'white',
+                  border: 'none'
+                }}
+                role='button'
                 href="www.slapshot16.com/"
                 target="_blank"
               >
@@ -168,8 +175,15 @@ function IndexNavbar() {
             </NavItem>
             <NavItem>
               <Button
-                className="btn-round"
-                color="success"
+                className=" btn-round"
+                style={{
+                  fontSize: '1em',
+                  margin: '.3em',
+                  backgroundColor: '#007BFF',
+                  color: 'white',
+                  border: 'none'
+                }}
+                role='button'
                 href="nativeprotracker.com/"
                 target="_blank"
               >
