@@ -56,7 +56,7 @@
   "main": "src/assets/scss/paper-kit.scss",
   "repository": {
     "type": "git",
-    "url": "https://njwright92.github.io/paper-kit-portfolio"
+    "url": "https://github.com/njwright92/paper-kit-portfolio.git"
   },
   "keywords": [
     "react",
