@@ -167,7 +167,7 @@ function IndexNavbar() {
                   border: 'none'
                 }}
                 role='button'
-                href="www.slapshot16.com/"
+                href="https://www.slapshot16.com/"
                 target="_blank"
               >
                 <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i> SlapShot16
@@ -184,7 +184,7 @@ function IndexNavbar() {
                   border: 'none'
                 }}
                 role='button'
-                href="nativeprotracker.com/"
+                href="https://nativeprotracker.com/"
                 target="_blank"
               >
                 <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i> ProTracker
