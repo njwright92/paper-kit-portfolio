@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/paper-kit-portfolio/static/css/main.1d7c0aae.css",
-    "main.js": "/paper-kit-portfolio/static/js/main.8c7bdd06.js",
+    "main.js": "/paper-kit-portfolio/static/js/main.c8f38fb6.js",
     "static/media/brewing.gif": "/paper-kit-portfolio/static/media/brewing.9b560256a7f49c052661.gif",
     "static/media/jetPack.gif": "/paper-kit-portfolio/static/media/jetPack.4f4c0f91909ff71e2c1e.gif",
     "static/media/nys.gif": "/paper-kit-portfolio/static/media/nys.de9ac1cb1025a4c2876b.gif",
@@ -18,8 +18,8 @@
     "static/media/fog-low.png": "/paper-kit-portfolio/static/media/fog-low.965eab52c95e117d1d45.png",
     "static/media/logo.jpg": "/paper-kit-portfolio/static/media/logo.5958171000cd98d44c2f.jpg",
     "static/media/comedify.jpeg": "/paper-kit-portfolio/static/media/comedify.fb43e58870b42487f28a.jpeg",
+    "static/media/Resume1.1.pdf": "/paper-kit-portfolio/static/media/Resume1.1.f4175c72c2f239b9b3c1.pdf",
     "static/media/flinstone.jpg": "/paper-kit-portfolio/static/media/flinstone.cbb7c6330667ac710e3a.jpg",
-    "static/media/resumeIT.pdf": "/paper-kit-portfolio/static/media/resumeIT.7de85d1aa62868fd4b9b.pdf",
     "static/media/me.jpg": "/paper-kit-portfolio/static/media/me.83959b47c18154eb40b1.jpg",
     "static/media/nucleo-icons.eot": "/paper-kit-portfolio/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
     "static/media/nucleo-icons.ttf": "/paper-kit-portfolio/static/media/nucleo-icons.4466aeec3386b965a232.ttf",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.1d7c0aae.css",
-    "static/js/main.8c7bdd06.js"
+    "static/js/main.c8f38fb6.js"
   ]
 }
