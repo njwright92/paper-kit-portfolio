@@ -37,20 +37,6 @@ function SectionExamples() {
           </Row>
           <Row className="example-page">
             <Col className="text-center" md="6">
-              <Button
-                className="btn-lg btn-round mb-3"
-                style={{
-                  fontSize: '1em',
-                  margin: 'auto',
-                  boxShadow: '4px 4px 8px white',
-                  marginBottom: '.5em',
-                  backgroundColor: '#007BFF',
-                  color: 'white',
-                  border: 'none'
-                }}
-                href="https://slapshot16.com">
-                <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i> SlapShot16
-              </Button>
 
               <div className="project-description" style={{ fontSize: '1.2em', lineHeight: '1.5' }}>
                 <span role="img" aria-label="hockey-stick">🏒</span>
@@ -65,30 +51,31 @@ function SectionExamples() {
                 <br />
                 This project is my first website and serves as a digital home for a hockey-themed food truck. The site features a menu, image gallery, and text ordering capabilities.
               </div>
-              <a href="https://slapshot16.com/">
-              <img
-                alt="..."
-                className="img-rounded img-responsive"
-                src={require("assets/img/logo.jpg")}
-                style={{ width: "77%" }}
-              />
-              </a>
-            </Col>
-            <Col className="text-center" md="6">
               <Button
-                className="btn-lg btn-round mb-3"
+                className="btn-lg btn-round mt-3"
                 style={{
                   fontSize: '1em',
                   margin: 'auto',
                   boxShadow: '4px 4px 8px white',
-                  marginBottom: '.5em',
+
                   backgroundColor: '#007BFF',
                   color: 'white',
                   border: 'none'
                 }}
-                href="https://nativeprotracker.com">
-                <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i> NativeProTracker
+                href="https://slapshot16.com">
+                <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i> SlapShot16
               </Button>
+              <a href="https://slapshot16.com/">
+                <img
+                  alt="..."
+                  className="img-rounded img-responsive"
+                  src={require("assets/img/logo.jpg")}
+                  style={{ width: "77%" }}
+                />
+              </a>
+            </Col>
+            <Col className="text-center" md="6">
+
               <div style={{ fontSize: '1.2em', lineHeight: '1.5' }}>
                 <span role="img" aria-label="chart">📈</span>
                 <strong style={{ fontSize: '1.3em' }}> Production Tracking App</strong>
@@ -100,6 +87,21 @@ function SectionExamples() {
                 <br />
                 I'm thrilled to introduce Native Pro Tracker, my innovative, scalable mobile app set to revolutionize task and product management. Capitalizing on the power of Google Cloud, Firebase, and Firestore DB, I've created an app that offers real-time data handling and top-notch security.
               </div>
+              <Button
+                className="btn-lg btn-round mt-3"
+                style={{
+                  fontSize: '1em',
+                  margin: 'auto',
+                  boxShadow: '4px 4px 8px white',
+
+                  backgroundColor: '#007BFF',
+                  color: 'white',
+                  border: 'none'
+                }}
+                href="https://nativeprotracker.com">
+                <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i> NativeProTracker
+              </Button>
+
               <a href="https://nativeprotracker.com">
                 <img
                   alt="..."
@@ -111,22 +113,7 @@ function SectionExamples() {
             </Col>
           </Row>
           <Row className="example-page justify-content-center">
-            <Col className="text-center">
-              <Button
-                className="btn-lg btn-round mb-3"
-                style={{
-                  fontSize: '1em',
-                  margin: 'auto',
-                  boxShadow: '4px 4px 8px white',
-                  marginBottom: '.5em',
-                  backgroundColor: '#007BFF',
-                  color: 'white',
-                  border: 'none'
-                }}
-                href="https://github.com/njwright92/comedify"
-              >
-                <i className="fa fa-lg fa-smile-o" aria-hidden="true"></i> Comedify
-              </Button>
+            <Col className="text-center" md="7">
               <div style={{ fontSize: '1.2em', lineHeight: '1.5' }}>
                 <span role="img" aria-label="microphone">🎤</span>
                 <strong style={{ fontSize: '1.3em' }}> Meet Comedify:</strong>
@@ -140,6 +127,21 @@ function SectionExamples() {
                 <br />
                 Your AI-powered sidekick for cracking up the room. Currently under construction! Coming soon!
               </div>
+              <Button
+                className="btn-lg btn-round mt-3"
+                style={{
+                  fontSize: '1em',
+                  margin: 'auto',
+                  boxShadow: '4px 4px 8px white',
+
+                  backgroundColor: '#007BFF',
+                  color: 'white',
+                  border: 'none'
+                }}
+                href="https://github.com/njwright92/comedify"
+              >
+                <i className="fa fa-lg fa-smile-o" aria-hidden="true"></i> Comedify
+              </Button>
               <a href="https://github.com/njwright92/comedify">
                 <img
                   alt="..."
