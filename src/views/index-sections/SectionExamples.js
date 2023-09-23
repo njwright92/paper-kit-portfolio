@@ -57,7 +57,7 @@ function SectionExamples() {
                 <strong style={{ fontSize: '1.3em' }}> Hockey Themed Food Truck Website</strong>
                 <hr style={{ backgroundColor: 'black', height: '.2em' }} />
 
-                <em>Technologies:</em> HTML5, CSS3, Bootstrap
+                <em>Technologies:</em> HTML5, CSS3, Bootstrap 5
                 <br />
                 <em>Deployment:</em> Netlify
                 <br />
@@ -65,12 +65,14 @@ function SectionExamples() {
                 <br />
                 This project is my first website and serves as a digital home for a hockey-themed food truck. The site features a menu, image gallery, and text ordering capabilities.
               </div>
+              <a href="https://slapshot16.com/">
               <img
                 alt="..."
                 className="img-rounded img-responsive"
-                src={require("assets/img/ssMenu.jpg")}
+                src={require("assets/img/logo.jpg")}
                 style={{ width: "77%" }}
               />
+              </a>
             </Col>
             <Col className="text-center" md="6">
               <Button
@@ -102,7 +104,7 @@ function SectionExamples() {
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
-                  src={require("assets/img/ProTracking.jpg")}
+                  src={require("assets/img/Branding.jpg")}
                   style={{ width: "77%" }}
                 />
               </a>
