@@ -27,7 +27,7 @@ import {
   Nav,
   Container,
 } from "reactstrap";
-import resume from '../../assets/img/resumeIT.pdf';
+import resume from '../../assets/img/Resume1.1.pdf';
 
 function IndexNavbar() {
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
