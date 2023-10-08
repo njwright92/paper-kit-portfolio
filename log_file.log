@@ -1,0 +1,130 @@
+INFO:CONFIG:Starting the Config Creation Server
+INFO:pygls.server:Starting IO server
+DEBUG:pygls.server:Content length: 5868
+INFO:CONFIG:Initialize Called
+DEBUG:pygls.server:Content length: 52
+INFO:CONFIG:Config Creation Server successfully initialized
+INFO:CONFIG:Asking user to create new config.
+DEBUG:pygls.server:Content length: 3247
+DEBUG:pygls.server:Content length: 168
+WARNING:pygls.protocol:Ignoring notification for unknown method "workspace/didChangeWatchedFiles"
+DEBUG:pygls.server:Content length: 64
+DEBUG:pygls.server:Content length: 157
+DEBUG:pygls.server:Content length: 3884
+DEBUG:pygls.server:Content length: 44
+ERROR:asyncio:Exception in callback JsonRPCProtocol._execute_notification_callback(<Task cancell...anager.py:67>>)
+handle: <Handle JsonRPCProtocol._execute_notification_callback(<Task cancell...anager.py:67>>)>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/protocol.py", line 235, in _execute_notification_callback
+    if future.exception():
+       ^^^^^^^^^^^^^^^^^^
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/feature_manager.py", line 68, in wrapped
+    return await f(server, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/uniteai/config.py", line 162, in initialized_callback
+    await handle_missing_config(ls)
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/uniteai/config.py", line 123, in handle_missing_config
+    response = await ask_user_with_message_request(server)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/uniteai/config.py", line 114, in ask_user_with_message_request
+    response = await asyncio.wrap_future(response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+DEBUG:pygls.server:Content length: 161
+WARNING:pygls.protocol:Server shutting down. No more requests!
+DEBUG:pygls.server:Content length: 33
+INFO:pygls.server:Shutting down the server
+INFO:pygls.server:Closing the event loop.
+ERROR:CONFIG:Config couldnt be found, nor created. Please copy the example from the github repo and locate it at `~/.uniteai.yml`
+INFO:CONFIG:Starting the Config Creation Server
+INFO:pygls.server:Starting IO server
+DEBUG:pygls.server:Content length: 5867
+INFO:CONFIG:Initialize Called
+DEBUG:pygls.server:Content length: 52
+INFO:CONFIG:Config Creation Server successfully initialized
+INFO:CONFIG:Asking user to create new config.
+DEBUG:pygls.server:Content length: 3884
+DEBUG:pygls.server:Content length: 106
+ERROR:CONFIG:Please manually copy and update the file `.uniateai.yml.example` from https://github.com/freckletonj/uniteai.
+INFO:pygls.server:Shutting down the server
+INFO:pygls.server:Closing the event loop.
+ERROR:CONFIG:Config couldnt be found, nor created. Please copy the example from the github repo and locate it at `~/.uniteai.yml`
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<wrap_with_server.<locals>.wrapped() done, defined at /Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/feature_manager.py:67> exception=SystemExit(0)>
+Traceback (most recent call last):
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/server.py", line 232, in start_io
+    self.loop.run_until_complete(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
+    self.run_forever()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
+    self._run_once()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
+    handle._run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/feature_manager.py", line 68, in wrapped
+    return await f(server, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/uniteai/config.py", line 162, in initialized_callback
+    await handle_missing_config(ls)
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/uniteai/config.py", line 133, in handle_missing_config
+    sys.exit(0)
+SystemExit: 0
+INFO:CONFIG:Starting the Config Creation Server
+INFO:pygls.server:Starting IO server
+DEBUG:pygls.server:Content length: 5867
+INFO:CONFIG:Initialize Called
+DEBUG:pygls.server:Content length: 52
+INFO:CONFIG:Config Creation Server successfully initialized
+INFO:CONFIG:Asking user to create new config.
+DEBUG:pygls.server:Content length: 3884
+DEBUG:pygls.server:Content length: 75
+INFO:pygls.server:Shutting down the server
+INFO:pygls.server:Closing the event loop.
+ERROR:pygls.protocol:Exception occurred in notification: "{'code': -32602, 'message': 'RuntimeError: Cannot close a running event loop', 'data': '{\'traceback\': [\'  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/protocol.py", line 238, in _execute_notification_callback\\n    raise future.exception()\\n\', \'  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/feature_manager.py", line 68, in wrapped\\n    return await f(server, *args, **kwargs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\', \'  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/uniteai/config.py", line 165, in initialized_callback\\n    await ls.shutdown()\\n          ^^^^^^^^^^^^^\\n\', \'  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/server.py", line 220, in shutdown\\n    self.loop.close()\\n\', \'  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/unix_events.py", line 68, in close\\n    super().close()\\n\', \'  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/selector_events.py", line 88, in close\\n    raise RuntimeError("Cannot close a running event loop")\\n\']}'}"
+Traceback (most recent call last):
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/protocol.py", line 238, in _execute_notification_callback
+    raise future.exception()
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/feature_manager.py", line 68, in wrapped
+    return await f(server, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/uniteai/config.py", line 165, in initialized_callback
+    await ls.shutdown()
+          ^^^^^^^^^^^^^
+  File "/Users/newdawg/Library/Python/3.11/lib/python/site-packages/pygls/server.py", line 220, in shutdown
+    self.loop.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+DEBUG:pygls.server:Content length: 44
+INFO:pygls.server:Shutting down the server
+INFO:pygls.server:Closing the event loop.
+ERROR:CONFIG:Config couldnt be found, nor created. Please copy the example from the github repo and locate it at `~/.uniteai.yml`
+INFO:CONFIG:Starting the Config Creation Server
+INFO:pygls.server:Starting IO server
+DEBUG:pygls.server:Content length: 5867
+INFO:CONFIG:Initialize Called
+DEBUG:pygls.server:Content length: 52
+INFO:CONFIG:Config Creation Server successfully initialized
+INFO:CONFIG:Asking user to create new config.
+DEBUG:pygls.server:Content length: 3884
+DEBUG:pygls.server:Content length: 7427
+DEBUG:pygls.server:Content length: 315
+DEBUG:pygls.server:Content length: 315
+DEBUG:pygls.server:Content length: 315
+DEBUG:pygls.server:Content length: 316
+DEBUG:pygls.server:Content length: 316
+DEBUG:pygls.server:Content length: 4867
+DEBUG:pygls.server:Content length: 320
+DEBUG:pygls.server:Content length: 320
+DEBUG:pygls.server:Content length: 320
+DEBUG:pygls.server:Content length: 321
+DEBUG:pygls.server:Content length: 321
+DEBUG:pygls.server:Content length: 308
+WARNING:pygls.protocol:Ignoring notification for unknown method "workspace/didChangeWatchedFiles"
+DEBUG:pygls.server:Content length: 9079
+DEBUG:pygls.server:Content length: 152
