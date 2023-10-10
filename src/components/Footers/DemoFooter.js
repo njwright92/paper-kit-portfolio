@@ -22,21 +22,33 @@ import { Row, Container, Button } from "reactstrap";
 
 function DemoFooter() {
   return (
-    <footer className="footer" style={{ marginBottom: '4em' }}>
+    <footer className="footer" style={{
+      backgroundImage: "url(" + require("assets/img/uriel-soberanes.jpg") + ")",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      marginBottom: '4em'
+    }}
+    >
       <Container>
         <Row className="justify-content-center align-items-center">
-          <nav className="footer-nav text-center">
-            <h3>
-              <strong>Contact Info</strong>
-            </h3>
-            <p>Nathan J. Wright currently located in Coeur D'Alene, Idaho.</p>
+          <nav className="footer-nav text-center text-black">
+            <div style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.7)',
+              borderRadius: '3em'
+            }}>
+              <h3>
+                <strong>Contact Info</strong>
+              </h3>
+              <p><strong>Nathan J. Wright currently located in Coeur D'Alene, Idaho.</strong></p>
+            </div>
+
             <Button
               className="btn-lg btn-round m-1"
               style={{
                 fontSize: '1em',
                 margin: 'auto',
                 boxShadow: '4px 4px 8px white',
-                marginBottom: '.5em',
+                margin: '.5em',
                 backgroundColor: '#007BFF',
                 color: 'white',
                 border: 'none'
@@ -52,7 +64,7 @@ function DemoFooter() {
                 fontSize: '1em',
                 margin: 'auto',
                 boxShadow: '4px 4px 8px white',
-                marginBottom: '.5em',
+                margin: '.5em',
                 backgroundColor: '#007BFF',
                 color: 'white',
                 border: 'none'
@@ -65,15 +77,18 @@ function DemoFooter() {
           </nav>
         </Row>
         <Row className="align-items-center justify-content-center">
-          <div className="credits text-center">
-            <span className="copyright">
+          <div className="credits text-center" style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.7)',
+              borderRadius: '3em'
+            }}>
+            <span className="copyright text-black">
               © {new Date().getFullYear()}, made with{" "}
               <i className="fa fa-lg fa-heart heart" /> by Nathan Wright
             </span>
           </div>
         </Row>
       </Container>
-    </footer>
+    </footer >
   );
 }
 

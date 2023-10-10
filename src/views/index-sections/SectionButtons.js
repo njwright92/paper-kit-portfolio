@@ -105,7 +105,6 @@ const SectionButtons = () => {
         </Row>
       </Container>
     </div >
-
   );
 }
 

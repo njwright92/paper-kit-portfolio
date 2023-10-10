@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Button, Col, FormGroup, Label, Row } from 'reactstrap';
-import '../../assets/css/SectionLogin.css'; // Import the custom CSS file
+import '../../assets/css/SectionLogin.css';
 
 
 const ChatBot = () => {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState({});
-  const [inputValue, setInputValue] = useState('');  // <-- Use an empty string here
-
+  const [inputValue, setInputValue] = useState('');
 
   const questions = [
     { id: 'yourName', text: 'What is your name?' },
@@ -64,7 +63,6 @@ const ChatBot = () => {
                     <Label htmlFor={questions[step].id} style={{ color: 'black' }}>
                       <h4><strong>{questions[step].text}</strong></h4>
                     </Label>
-
                     <textarea
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
@@ -73,7 +71,6 @@ const ChatBot = () => {
                       style={{ width: '50vw' }}
                     >
                     </textarea>
-
                   </Col>
                 </Row>
                 <Row className="mt-3 align-items-center justify-content-center">
@@ -123,7 +120,6 @@ const ChatBot = () => {
       </Row>
     </div >
   );
-
 };
 
 export default ChatBot;

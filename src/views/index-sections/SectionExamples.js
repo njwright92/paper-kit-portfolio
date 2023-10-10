@@ -49,7 +49,7 @@ function SectionExamples() {
                 <br />
                 <strong>Overview:</strong>
                 <br />
-                This project is my first website and serves as a digital home for a hockey-themed food truck. The site features a menu, image gallery, and text ordering capabilities.
+                My initial venture into web development: a responsive site for a hockey-themed food truck. Utilizing Bootstrap, the site boasts a dynamic image carousel, an intuitive menu display, and convenient text-based ordering. A straightforward yet effective digital representation of culinary delights on wheels.
               </div>
               <Button
                 className="btn-lg btn-round mt-3"
@@ -82,6 +82,8 @@ function SectionExamples() {
                 <hr style={{ backgroundColor: 'black', height: '.2em' }} />
 
                 <em>Technologies:</em> G.C.P., Firebase, Expo-React-Native, Redux
+                <br />
+                <em>Deployment:</em> Firebase and G.K.E. cluster
                 <br />
                 <strong>Overview:</strong>
                 <br />
@@ -125,7 +127,7 @@ function SectionExamples() {
                 <br />
                 <strong>Overview:</strong>
                 <br />
-                Your AI-powered sidekick for cracking up the room. Currently under construction! Coming soon!
+                Introducing your AI-driven comedic companion, designed to lighten up any room. Currently in development, this project harnesses the power of Python and the sophisticated Transformers library. I'm meticulously training a state-of-the-art language model on a curated collection of top-tier comedy, ensuring a delightful user experience. Anticipate a blend of technology and humor like you've never seen before. Stay tuned for its launch!
               </div>
               <Button
                 className="btn-lg btn-round mt-3"
@@ -155,7 +157,7 @@ function SectionExamples() {
           </Row>
 
         </Container>
-      </div > {" "}
+      </div >
     </>
   );
 }

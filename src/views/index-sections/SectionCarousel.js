@@ -196,7 +196,7 @@ function SectionCarousel() {
             </Col>
           </Row>
         </Container>
-      </div>{" "}
+      </div>
     </>
   );
 }
