@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #A8D5BA;
+  background-color: #A8BAD5;
   /* Dark Slate Gray background color */
 }
 
@@ -80,12 +80,12 @@
 /* SectionLogin.css */
 
 #carousel {
-  background-color: #A8D5BA;
+  background-color: #A8BAD5;
   /* Light green background color */
 }
 
 .carousel-container {
-  background-color: #A8D5BA;
+  background-color: #A8BAD5;
   /* Replace with the background color of your page */
 }
 

@@ -24,7 +24,7 @@ import resume from '../../assets/img/Resume01.pdf';
 
 const SectionButtons = () => {
   return (
-    <div style={{ backgroundColor: "#A8D5BA", padding: "2em", minHeight: "100vh" }}>
+    <div style={{ backgroundColor: "#A8BAD5", padding: "2em", minHeight: "100vh" }}>
       <Container>
         <Row className="align-items-center">
           <Col className="text-center mb-4">
