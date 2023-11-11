@@ -1,44 +1,26 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/*eslint-disable*/
 import React from "react";
 import { Container } from "reactstrap";
-import '../../assets/css/styles.css';
-
+import "../../assets/css/styles.css";
+import fernanImage from "../../assets/img/fernan.JPG";
+import cloudsImage from "../../assets/img/clouds.png";
+import jrDevImage from "../../assets/img/jrDev.jpeg";
 
 function IndexHeader() {
+  const backgroundImageStyle = {
+    backgroundImage: `url(${fernanImage})`,
+  };
+
+  const movingCloudsStyle = {
+    backgroundImage: `url(${cloudsImage})`,
+  };
+
   return (
-    <>
-      <div
-        className="page-header section-dark"
-        style={{
-          backgroundImage:
-            "url(" + require("assets/img/fernan.JPG") + ")",
-        }}
-      >
-        <div className="filter" />
+    <React.Fragment>
+      <div className="page-header section-dark" style={backgroundImageStyle}>
         <div className="content-center">
           <Container>
             <h3 className="text-center text-white">
-              <em>
-                Nathan John Wright
-              </em>
+              <em>Nathan John Wright</em>
             </h3>
             <div className="container">
               <div className="circle">
@@ -59,34 +41,26 @@ function IndexHeader() {
                 </div>
               </div>
             </div>
-
             <h2 className="presentation-subtitle text-center">
-              <em>
-                "Your best investment is in yourself"
-              </em>
+              <em>"Your best investment is in yourself"</em>
             </h2>
           </Container>
         </div>
-
-        <div
-          className="moving-clouds"
-          style={{
-            backgroundImage: "url(" + require("assets/img/clouds.png") + ")",
-          }}
-        />
+        <div className="moving-clouds" style={movingCloudsStyle} />
         <h6 className="category category-absolute">
           Designed and coded by {"Nathan Wright"}
+          {/* eslint-disable-next-line */}
           <a>
             <img
               alt="..."
               className="creative-tim-logo"
-              src={require("assets/img/jrDev.jpeg")}
-              style={{ height: '3.3rem' }}
+              src={jrDevImage}
+              style={{ height: "3.3rem" }}
             />
           </a>
         </h6>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

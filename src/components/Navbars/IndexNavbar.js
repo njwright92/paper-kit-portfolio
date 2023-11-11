@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import classnames from "classnames";
 import {
@@ -27,15 +9,15 @@ import {
   Nav,
   Container,
 } from "reactstrap";
-import resume from '../../assets/img/Resume01.pdf';
+import resume from "../../assets/img/Resume01.pdf";
 
 function IndexNavbar() {
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
-  const toggleNavbarCollapse = () => {
-    setNavbarCollapse(!navbarCollapse);
+  const toggleNavbarCollapse = React.useCallback(() => {
+    setNavbarCollapse((prevState) => !prevState);
     document.documentElement.classList.toggle("nav-open");
-  };
+  }, []);
 
   return (
     <Navbar
@@ -47,9 +29,11 @@ function IndexNavbar() {
         <div className="navbar-translate">
           <button
             aria-expanded={navbarCollapse}
-            className={classnames("navbar-toggler", { toggled: navbarCollapse })}
+            className={classnames("navbar-toggler", {
+              toggled: navbarCollapse,
+            })}
             onClick={toggleNavbarCollapse}
-            style={{ marginLeft: 'auto' }}
+            style={{ marginLeft: "auto" }}
           >
             <span className="navbar-toggler-bar bar1" />
             <span className="navbar-toggler-bar bar2" />
@@ -66,25 +50,49 @@ function IndexNavbar() {
           <Nav className="white-navbar align-items-center justify-content-center">
             <NavItem>
               <NavLink href="#section-buttons" title="Go to Home">
-                <span role="img" aria-label="house" style={{ fontSize: '1.5em' }}>🏠</span>
+                <span
+                  role="img"
+                  aria-label="house"
+                  style={{ fontSize: "1.5em" }}
+                >
+                  🏠
+                </span>
                 <p className="d-lg-none"> Home</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#section-examples" title="Go to Projects">
-                <span role="img" aria-label="laptop" style={{ fontSize: '1.5em' }}>💻</span>
+                <span
+                  role="img"
+                  aria-label="laptop"
+                  style={{ fontSize: "1.5em" }}
+                >
+                  💻
+                </span>
                 <p className="d-lg-none"> Projects</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#section-carousel" title="Go to Passions">
-                <span role="img" aria-label="snowflake" style={{ fontSize: '1.5em', color: '#0000FF' }}>❄️</span>
+                <span
+                  role="img"
+                  aria-label="snowflake"
+                  style={{ fontSize: "1.5em", color: "#0000FF" }}
+                >
+                  ❄️
+                </span>
                 <p className="d-lg-none"> Passions</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#section-login" title="Go to Site Request">
-                <span role="img" aria-label="email" style={{ fontSize: '1.5em', color: '#0000FF' }}>✉️</span>
+                <span
+                  role="img"
+                  aria-label="email"
+                  style={{ fontSize: "1.5em", color: "#0000FF" }}
+                >
+                  ✉️
+                </span>
                 <p className="d-lg-none"> Site Request</p>
               </NavLink>
             </NavItem>
@@ -160,34 +168,36 @@ function IndexNavbar() {
               <Button
                 className="btn-round"
                 style={{
-                  fontSize: '1em',
-                  margin: '.3em',
-                  backgroundColor: '#007BFF',
-                  color: 'white',
-                  border: 'none'
+                  fontSize: "1em",
+                  margin: ".3em",
+                  backgroundColor: "#007BFF",
+                  color: "white",
+                  border: "none",
                 }}
-                role='button'
+                role="button"
                 href="https://www.slapshot16.com/"
                 target="_blank"
               >
-                <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i> SlapShot16
+                <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i>{" "}
+                SlapShot16
               </Button>
             </NavItem>
             <NavItem>
               <Button
                 className=" btn-round"
                 style={{
-                  fontSize: '1em',
-                  margin: '.3em',
-                  backgroundColor: '#007BFF',
-                  color: 'white',
-                  border: 'none'
+                  fontSize: "1em",
+                  margin: ".3em",
+                  backgroundColor: "#007BFF",
+                  color: "white",
+                  border: "none",
                 }}
-                role='button'
+                role="button"
                 href="https://nativeprotracker.com/"
                 target="_blank"
               >
-                <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i> ProTracker
+                <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i>{" "}
+                ProTracker
               </Button>
             </NavItem>
           </Nav>
@@ -197,4 +207,4 @@ function IndexNavbar() {
   );
 }
 
-export default IndexNavbar;
+export default React.memo(IndexNavbar);
