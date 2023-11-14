@@ -11,7 +11,7 @@ import {
 } from "reactstrap";
 import nys from "../../assets/img/nys.gif";
 import gifGame from "../../utils/gifGame.js";
-import resume from "../../assets/img/Resume01.pdf";
+import resume from "../../assets/img/Resume1.1.pdf";
 
 const SectionButtons = () => {
   return (

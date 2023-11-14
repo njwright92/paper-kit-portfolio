@@ -153,16 +153,16 @@ function SectionExamples() {
                   color: "white",
                   border: "none",
                 }}
-                href="https://github.com/njwright92/comedify"
+                href="https://comedify-54274.web.app/"
               >
                 <i className="fa fa-lg fa-smile-o" aria-hidden="true"></i>{" "}
                 Comedify
               </Button>
-              <a href="https://github.com/njwright92/comedify">
+              <a href="https://comedify-54274.web.app/">
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
-                  src={require("assets/img/comedify.jpeg")}
+                  src={require("assets/img/Comics.jpg")}
                   style={{ width: "77%" }}
                 />
               </a>
