@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/paper-kit-portfolio/static/css/main.cf16f26f.css",
-    "main.js": "/paper-kit-portfolio/static/js/main.f7578225.js",
+    "main.js": "/paper-kit-portfolio/static/js/main.cabed872.js",
     "static/media/brewing.gif": "/paper-kit-portfolio/static/media/brewing.9b560256a7f49c052661.gif",
     "static/media/jetPack.gif": "/paper-kit-portfolio/static/media/jetPack.4f4c0f91909ff71e2c1e.gif",
     "static/media/nys.gif": "/paper-kit-portfolio/static/media/nys.de9ac1cb1025a4c2876b.gif",
@@ -14,12 +14,12 @@
     "static/media/proTracker.jpg": "/paper-kit-portfolio/static/media/proTracker.8ee19ec61a1e4929656f.jpg",
     "static/media/rail.jpg": "/paper-kit-portfolio/static/media/rail.c430ef5918d096b86780.jpg",
     "static/media/uriel-soberanes.jpg": "/paper-kit-portfolio/static/media/uriel-soberanes.b741f54e9ccbd071a751.jpg",
+    "static/media/Comics.jpg": "/paper-kit-portfolio/static/media/Comics.9355a12816bbdca88e56.jpg",
     "static/media/bshaw.jpg": "/paper-kit-portfolio/static/media/bshaw.22361b6b3254e21b029d.jpg",
     "static/media/medium.jpg": "/paper-kit-portfolio/static/media/medium.9346f59ea96645cf18a5.jpg",
     "static/media/fog-low.png": "/paper-kit-portfolio/static/media/fog-low.965eab52c95e117d1d45.png",
     "static/media/logo.jpg": "/paper-kit-portfolio/static/media/logo.5958171000cd98d44c2f.jpg",
-    "static/media/comedify.jpeg": "/paper-kit-portfolio/static/media/comedify.fb43e58870b42487f28a.jpeg",
-    "static/media/Resume01.pdf": "/paper-kit-portfolio/static/media/Resume01.b7687cdc3adca50d98ed.pdf",
+    "static/media/Resume1.1.pdf": "/paper-kit-portfolio/static/media/Resume1.1.3c0c93f2fbf938f4496b.pdf",
     "static/media/flinstone.jpg": "/paper-kit-portfolio/static/media/flinstone.cbb7c6330667ac710e3a.jpg",
     "static/media/me.jpg": "/paper-kit-portfolio/static/media/me.83959b47c18154eb40b1.jpg",
     "static/media/nucleo-icons.eot": "/paper-kit-portfolio/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.cf16f26f.css",
-    "static/js/main.f7578225.js"
+    "static/js/main.cabed872.js"
   ]
 }
