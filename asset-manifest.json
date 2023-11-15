@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/paper-kit-portfolio/static/css/main.cf16f26f.css",
-    "main.js": "/paper-kit-portfolio/static/js/main.cabed872.js",
+    "main.js": "/paper-kit-portfolio/static/js/main.5a767f46.js",
     "static/media/brewing.gif": "/paper-kit-portfolio/static/media/brewing.9b560256a7f49c052661.gif",
     "static/media/jetPack.gif": "/paper-kit-portfolio/static/media/jetPack.4f4c0f91909ff71e2c1e.gif",
     "static/media/nys.gif": "/paper-kit-portfolio/static/media/nys.de9ac1cb1025a4c2876b.gif",
@@ -18,7 +18,6 @@
     "static/media/bshaw.jpg": "/paper-kit-portfolio/static/media/bshaw.22361b6b3254e21b029d.jpg",
     "static/media/medium.jpg": "/paper-kit-portfolio/static/media/medium.9346f59ea96645cf18a5.jpg",
     "static/media/fog-low.png": "/paper-kit-portfolio/static/media/fog-low.965eab52c95e117d1d45.png",
-    "static/media/logo.jpg": "/paper-kit-portfolio/static/media/logo.5958171000cd98d44c2f.jpg",
     "static/media/Resume1.1.pdf": "/paper-kit-portfolio/static/media/Resume1.1.3c0c93f2fbf938f4496b.pdf",
     "static/media/flinstone.jpg": "/paper-kit-portfolio/static/media/flinstone.cbb7c6330667ac710e3a.jpg",
     "static/media/me.jpg": "/paper-kit-portfolio/static/media/me.83959b47c18154eb40b1.jpg",
@@ -31,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.cf16f26f.css",
-    "static/js/main.cabed872.js"
+    "static/js/main.5a767f46.js"
   ]
 }
