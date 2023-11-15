@@ -65,6 +65,7 @@ function SectionExamples() {
                   className="img-rounded img-responsive"
                   src={require("assets/img/Comics.jpg")}
                   style={{ width: "77%" }}
+                  load="lazy"
                 />
               </a>
             </Col>
@@ -112,6 +113,7 @@ function SectionExamples() {
                   className="img-rounded img-responsive"
                   src={require("assets/img/Branding.jpg")}
                   style={{ width: "77%" }}
+                  load="lazy"
                 />
               </a>
             </Col>

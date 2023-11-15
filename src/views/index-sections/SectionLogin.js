@@ -89,7 +89,8 @@ const ChatBot = () => {
                       className="form-control mx-auto p-1 m-1 align-items-center justify-content-center"
                       rows="5"
                       style={{ width: "50vw" }}
-                    ></textarea>
+                    >
+                    </textarea>
                   </Col>
                 </Row>
                 <Row className="mt-3 align-items-center justify-content-center">

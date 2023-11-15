@@ -89,6 +89,7 @@ const SectionButtons = () => {
                 boxShadow: "0 0 1em rgba(0,0,0,0.5)",
                 maxWidth: "27em",
               }}
+              load="lazy"
             />
           </Col>
           <Col xs={12} md={6} className="text-center mb-2 mt-4 p-1">

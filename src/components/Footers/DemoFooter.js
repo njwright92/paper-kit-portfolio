@@ -17,6 +17,7 @@ const DemoFooter = memo(() => {
         backgroundPosition: "center",
         marginBottom: "4em",
       }}
+      load="lazy"
     >
       <Container>
         <Row className="justify-content-center align-items-center">

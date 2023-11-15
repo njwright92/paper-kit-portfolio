@@ -34,10 +34,18 @@ function IndexHeader() {
               <div className="title-brand">
                 <h1 className="presentation-title">Code Showcase</h1>
                 <div className="fog-low">
-                  <img alt="..." src={require("assets/img/fog-low.png")} />
+                  <img
+                    alt="..."
+                    src={require("assets/img/fog-low.png")}
+                    load="lazy"
+                  />
                 </div>
                 <div className="fog-low right">
-                  <img alt="..." src={require("assets/img/fog-low.png")} />
+                  <img
+                    alt="..."
+                    src={require("assets/img/fog-low.png")}
+                    load="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -56,6 +64,7 @@ function IndexHeader() {
               className="creative-tim-logo"
               src={jrDevImage}
               style={{ height: "3.3rem" }}
+              load="lazy"
             />
           </a>
         </h6>
