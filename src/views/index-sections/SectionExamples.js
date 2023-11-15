@@ -23,29 +23,26 @@ function SectionExamples() {
           </Row>
           <Row className="example-page">
             <Col className="text-center" md="6">
-              <div
-                className="project-description"
-                style={{ fontSize: "1.2em", lineHeight: "1.5" }}
-              >
-                <span role="img" aria-label="hockey-stick">
-                  🏒
+              <div style={{ fontSize: "1.2em", lineHeight: "1.5" }}>
+                <span role="img" aria-label="microphone">
+                  🎤
                 </span>
-                <strong style={{ fontSize: "1.3em" }}>
-                  {" "}
-                  Hockey Themed Food Truck Website
-                </strong>
+                <strong style={{ fontSize: "1.3em" }}> Meet Comedify:</strong>
                 <hr style={{ backgroundColor: "black", height: ".2em" }} />
-                <em>Technologies:</em> HTML5, CSS3, Bootstrap 5
+                <em>Status:</em> Live but under Construction
                 <br />
-                <em>Deployment:</em> Netlify
+                <em>Technologies:</em> Next.js, React, Firebase, Hugging Face,
+                JavaScript, Python
                 <br />
                 <strong>Overview:</strong>
                 <br />
-                My initial venture into web development: a responsive site for a
-                hockey-themed food truck. Utilizing Bootstrap, the site boasts a
-                dynamic image carousel, an intuitive menu display, and
-                convenient text-based ordering. A straightforward yet effective
-                digital representation of culinary delights on wheels.
+                Introducing your AI-driven comedic companion, designed to
+                lighten up any room. Currently in development, this project
+                harnesses the power of Python and the sophisticated Transformers
+                library. I'm meticulously training a state-of-the-art language
+                model on a curated collection of top-tier comedy, ensuring a
+                delightful user experience. Anticipate a blend of technology and
+                humor like you've never seen before. Stay tuned for its launch!
               </div>
               <Button
                 className="btn-lg btn-round mt-3"
@@ -53,21 +50,20 @@ function SectionExamples() {
                   fontSize: "1em",
                   margin: "auto",
                   boxShadow: "4px 4px 8px white",
-
                   backgroundColor: "#007BFF",
                   color: "white",
                   border: "none",
                 }}
-                href="https://slapshot16.com"
+                href="https://comedify-54274.web.app/"
               >
-                <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i>{" "}
-                SlapShot16
+                <i className="fa fa-lg fa-smile-o" aria-hidden="true"></i>{" "}
+                Comedify
               </Button>
-              <a href="https://slapshot16.com/">
+              <a href="https://comedify-54274.web.app/">
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
-                  src={require("assets/img/logo.jpg")}
+                  src={require("assets/img/Comics.jpg")}
                   style={{ width: "77%" }}
                 />
               </a>
@@ -115,54 +111,6 @@ function SectionExamples() {
                   alt="..."
                   className="img-rounded img-responsive"
                   src={require("assets/img/Branding.jpg")}
-                  style={{ width: "77%" }}
-                />
-              </a>
-            </Col>
-          </Row>
-          <Row className="example-page justify-content-center">
-            <Col className="text-center" md="7">
-              <div style={{ fontSize: "1.2em", lineHeight: "1.5" }}>
-                <span role="img" aria-label="microphone">
-                  🎤
-                </span>
-                <strong style={{ fontSize: "1.3em" }}> Meet Comedify:</strong>
-                <hr style={{ backgroundColor: "black", height: ".2em" }} />
-                <em>Status:</em> Under Construction
-                <br />
-                <em>Technologies:</em> Next.js, React, Firebase, Hugging Face,
-                JavaScript, Python
-                <br />
-                <strong>Overview:</strong>
-                <br />
-                Introducing your AI-driven comedic companion, designed to
-                lighten up any room. Currently in development, this project
-                harnesses the power of Python and the sophisticated Transformers
-                library. I'm meticulously training a state-of-the-art language
-                model on a curated collection of top-tier comedy, ensuring a
-                delightful user experience. Anticipate a blend of technology and
-                humor like you've never seen before. Stay tuned for its launch!
-              </div>
-              <Button
-                className="btn-lg btn-round mt-3"
-                style={{
-                  fontSize: "1em",
-                  margin: "auto",
-                  boxShadow: "4px 4px 8px white",
-                  backgroundColor: "#007BFF",
-                  color: "white",
-                  border: "none",
-                }}
-                href="https://comedify-54274.web.app/"
-              >
-                <i className="fa fa-lg fa-smile-o" aria-hidden="true"></i>{" "}
-                Comedify
-              </Button>
-              <a href="https://comedify-54274.web.app/">
-                <img
-                  alt="..."
-                  className="img-rounded img-responsive"
-                  src={require("assets/img/Comics.jpg")}
                   style={{ width: "77%" }}
                 />
               </a>
