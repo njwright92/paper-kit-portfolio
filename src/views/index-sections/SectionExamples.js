@@ -22,8 +22,47 @@ function SectionExamples() {
             </Col>
           </Row>
           <Row className="example-page">
-            <Col className="text-center" md="6">
+            <Col className="text-center mt-2" md="6">
               <div style={{ fontSize: "1.2em", lineHeight: "1.5" }}>
+                <hr style={{ backgroundColor: "black", height: ".2em" }} />
+                <span role="img" aria-label="microphone">
+                  🎤
+                </span>
+                <strong style={{ fontSize: "1.3em" }}>OpenMicFinder:</strong>
+                <hr style={{ backgroundColor: "black", height: ".2em" }} />
+                <em>Status:</em> Live but under Construction
+                <br />
+                <em>Technologies:</em> Next.js, React, Firebase, Google Cloud
+                Platform Maps
+                <br />
+                <strong>Overview:</strong>
+                <br />
+                OpenMicFinder is a platform for discovering open mic events
+                tailored for stand-up comedians and artists. Built with
+                TypeScript, Firebase/Firestore for data management, and
+                integrated with Google Cloud Platform Maps for location-based
+                features.
+              </div>
+              <Button
+                className="btn-lg btn-round mt-3"
+                style={{
+                  fontSize: "1em",
+                  margin: "auto",
+                  boxShadow: "4px 4px 8px white",
+                  backgroundColor: "#007BFF",
+                  color: "white",
+                  border: "none",
+                }}
+                href="https://micfinder-fb06f.web.app/"
+              >
+                <i className="fa fa-lg fa-microphone" aria-hidden="true"></i>{" "}
+                OpenMicFinder
+              </Button>
+            </Col>
+
+            <Col className="text-center mt-2" md="6">
+              <div style={{ fontSize: "1.2em", lineHeight: "1.5" }}>
+                <hr style={{ backgroundColor: "black", height: ".2em" }} />
                 <span role="img" aria-label="microphone">
                   🎤
                 </span>
@@ -69,8 +108,9 @@ function SectionExamples() {
                 />
               </a>
             </Col>
-            <Col className="text-center" md="6">
+            <Col className="text-center mt-2" md="6">
               <div style={{ fontSize: "1.2em", lineHeight: "1.5" }}>
+                <hr style={{ backgroundColor: "black", height: ".2em" }} />
                 <span role="img" aria-label="chart">
                   📈
                 </span>
