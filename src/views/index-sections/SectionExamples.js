@@ -58,6 +58,15 @@ function SectionExamples() {
                 <i className="fa fa-lg fa-microphone" aria-hidden="true"></i>{" "}
                 OpenMicFinder
               </Button>
+              <a href="https://micfinder-fb06f.web.app/">
+                <img
+                  alt="..."
+                  className="img-rounded img-responsive"
+                  src={require("assets/img/micFinder.png")}
+                  style={{ width: "100%" }}
+                  load="lazy"
+                />
+              </a>
             </Col>
 
             <Col className="text-center mt-2" md="6">
@@ -103,7 +112,7 @@ function SectionExamples() {
                   alt="..."
                   className="img-rounded img-responsive"
                   src={require("assets/img/Comics.jpg")}
-                  style={{ width: "77%" }}
+                  style={{ width: "75%" }}
                   load="lazy"
                 />
               </a>
@@ -152,7 +161,7 @@ function SectionExamples() {
                   alt="..."
                   className="img-rounded img-responsive"
                   src={require("assets/img/Branding.jpg")}
-                  style={{ width: "77%" }}
+                  style={{ width: "100%" }}
                   load="lazy"
                 />
               </a>
