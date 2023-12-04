@@ -32,7 +32,7 @@ function IndexHeader() {
                 <i className="fab fa-lg fa-node-js logo logo-nodejs"></i>
               </div>
               <div className="title-brand">
-                <h1 className="presentation-title">Code Showcase</h1>
+                <h1 className="presentation-title">Code Showcase!</h1>
                 <div className="fog-low">
                   <img
                     alt="..."
@@ -50,7 +50,7 @@ function IndexHeader() {
               </div>
             </div>
             <h2 className="presentation-subtitle text-center">
-              <em>"Your best investment is in yourself"</em>
+              <em>"Your best investment is in yourself!"</em>
             </h2>
           </Container>
         </div>
@@ -63,7 +63,7 @@ function IndexHeader() {
               alt="..."
               className="creative-tim-logo"
               src={jrDevImage}
-              style={{ height: "3.3rem" }}
+              style={{ height: "3.3rem", borderRadius: "3em" }}
               load="lazy"
             />
           </a>
