@@ -9,6 +9,7 @@ import SectionCarousel from "views/index-sections/SectionCarousel.js";
 import SectionLogin from "views/index-sections/SectionLogin.js";
 import SectionExamples from "views/index-sections/SectionExamples.js";
 import BackToTop from "components/backToTop";
+import output from "assets/img/output.mp4";
 
 function Index() {
   const [showGif, setShowGif] = useState(true);
@@ -20,12 +21,28 @@ function Index() {
   }, []);
 
   const renderGif = () => (
-    <img
-      src="https://usagif.com/wp-content/uploads/gifs/water-43.gif"
-      alt="Running stream"
-      style={{ width: "100%", height: "3.5em" }}
-      onError={() => setShowGif(false)}
-    />
+    <div style={{ width: "100%", position: "relative", height: "3.5em" }}>
+      <video
+        style={{
+          position: "absolute",
+          top: "0",
+          left: "0",
+          width: "100%",
+          height: "3.5em",
+          objectFit: "cover",
+        }}
+        loop
+        autoPlay
+        muted
+        playsInline
+        onError={() => {
+          setShowGif(false);
+        }}
+      >
+        <source src={output} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
   );
 
   return (

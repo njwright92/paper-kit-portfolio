@@ -9,7 +9,7 @@ import {
   CardTitle,
   CardText,
 } from "reactstrap";
-import nys from "../../assets/img/nys.gif";
+import nys from "../../assets/img/nys.mp4";
 import gifGame from "../../utils/gifGame.js";
 import resume from "../../assets/img/Resume1.1.pdf";
 
@@ -81,17 +81,23 @@ const SectionButtons = () => {
         </Row>
         <Row className="align-items-center justify-content-center">
           <Col xs={12} md={6} className="text-center mb-2 mt-4">
-            <img
-              src={nys}
-              alt="logo"
-              style={{
-                borderRadius: "25%",
-                boxShadow: "0 0 1em rgba(0,0,0,0.5)",
-                maxWidth: "27em",
-              }}
-              load="lazy"
-            />
-          </Col>
+          <video
+            style={{
+              borderRadius: "25%",
+              boxShadow: "0 0 1em rgba(0,0,0,0.5)",
+              maxWidth: "27em",
+              width: "100%",
+              height: "auto"
+            }}
+            loop
+            autoPlay
+            muted
+            playsInline
+          >
+            <source src={nys} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Col>
           <Col xs={12} md={6} className="text-center mb-2 mt-4 p-1">
             <Card className="bg-secondary rounded-5">
               <CardBody>
@@ -122,14 +128,14 @@ const SectionButtons = () => {
                 </CardText>
               </CardBody>
               <Button
-                className="btn-lg btn-round"
+                className="btn-lg btn-round text-black"
                 style={{
                   fontSize: "1em",
                   margin: "auto",
                   boxShadow: "4px 4px 8px white",
                   marginBottom: ".5em",
                   backgroundColor: "#007BFF",
-                  color: "white",
+                  color: "black",
                   border: "none",
                 }}
                 href="mailto:njwright92@gmail.com"

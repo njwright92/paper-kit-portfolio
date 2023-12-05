@@ -39,13 +39,13 @@ const DemoFooter = memo(() => {
             </div>
 
             <Button
-              className="btn-lg btn-round m-1"
+              className="btn-lg btn-round m-1 text-black"
               style={{
                 fontSize: "1em",
                 boxShadow: "4px 4px 8px white",
                 margin: ".5em",
                 backgroundColor: "#007BFF",
-                color: "white",
+                color: "black",
                 border: "none",
               }}
               role="button"
@@ -54,13 +54,13 @@ const DemoFooter = memo(() => {
               Email!
             </Button>
             <Button
-              className="btn-lg btn-round m-1"
+              className="btn-lg btn-round m-1 text-black"
               style={{
                 fontSize: "1em",
                 boxShadow: "4px 4px 8px white",
                 margin: ".5em",
                 backgroundColor: "#007BFF",
-                color: "white",
+                color: "black",
                 border: "none",
               }}
               role="button"

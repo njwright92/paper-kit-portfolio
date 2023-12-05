@@ -96,7 +96,7 @@ const ChatBot = () => {
                 <Row className="mt-3 align-items-center justify-content-center">
                   <Col md="auto">
                     <Button
-                      className="btn-lg btn-round"
+                      className="btn-lg btn-round text-black"
                       style={{
                         fontSize: "1em",
                         margin: "auto",
@@ -126,7 +126,7 @@ const ChatBot = () => {
                 email me your site request with the information you provided.
               </h4>
               <Button
-                className="btn-lg btn-round"
+                className="btn-lg btn-round text-black"
                 style={{
                   fontSize: "1em",
                   margin: "auto",

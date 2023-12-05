@@ -2,10 +2,31 @@ const favoriteSport = ["baseball", "football", "skateboarding", "snowboarding"];
 
 function showGif() {
   const button = document.querySelector("#game-button");
-  const gif = document.createElement("img");
-  gif.src = require("../assets/img/ripper-snowboarder.gif");
-  gif.alt = "Correct";
-  button.replaceWith(gif);
+
+  // Create video element
+  const video = document.createElement("video");
+  video.setAttribute("loop", true);
+  video.setAttribute("autoplay", true);
+  video.setAttribute("muted", true);
+  video.setAttribute("playsinline", true);
+
+  // Apply any additional styles you need
+  video.style.maxWidth = "100%";
+  video.style.height = "auto";
+
+  // Create source element
+  const source = document.createElement("source");
+  source.src = require("../assets/img/ripper-snowboarder.mp4"); // Keep the gif file name
+  source.type = "video/mp4"; // Set the correct MIME type for a video file
+
+  // Append source to video
+  video.appendChild(source);
+
+  // Set alt text equivalent for video (for accessibility, although not standard)
+  video.setAttribute("title", "Correct");
+
+  // Replace button with video
+  button.replaceWith(video);
 }
 
 function gifGame() {

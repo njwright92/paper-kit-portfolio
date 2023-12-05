@@ -50,12 +50,12 @@ function SectionExamples() {
                   margin: "auto",
                   boxShadow: "4px 4px 8px white",
                   backgroundColor: "#007BFF",
-                  color: "white",
+                  color: "black",
                   border: "none",
                 }}
                 href="https://micfinder-fb06f.web.app/"
               >
-                <i className="fa fa-lg fa-microphone" aria-hidden="true"></i>{" "}
+                <i className="fa fa-lg fa-microphone text-black" aria-hidden="true"></i>{" "}
                 OpenMicFinder
               </Button>
               <a href="https://micfinder-fb06f.web.app/">
@@ -63,7 +63,7 @@ function SectionExamples() {
                   alt="..."
                   className="img-rounded img-responsive"
                   src={require("assets/img/micFinder.png")}
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", height: "auto" }}
                   load="lazy"
                 />
               </a>
@@ -99,12 +99,12 @@ function SectionExamples() {
                   margin: "auto",
                   boxShadow: "4px 4px 8px white",
                   backgroundColor: "#007BFF",
-                  color: "white",
+                  color: "black",
                   border: "none",
                 }}
                 href="https://comedify-54274.web.app/"
               >
-                <i className="fa fa-lg fa-smile-o" aria-hidden="true"></i>{" "}
+                <i className="fa fa-lg fa-smile-o text-black" aria-hidden="true"></i>{" "}
                 Comedify
               </Button>
               <a href="https://comedify-54274.web.app/">
@@ -112,7 +112,7 @@ function SectionExamples() {
                   alt="..."
                   className="img-rounded img-responsive"
                   src={require("assets/img/Comics.jpg")}
-                  style={{ width: "75%" }}
+                  style={{ width: "75%", height: "auto" }}
                   load="lazy"
                 />
               </a>
@@ -148,12 +148,12 @@ function SectionExamples() {
                   margin: "auto",
                   boxShadow: "4px 4px 8px white",
                   backgroundColor: "#007BFF",
-                  color: "white",
+                  color: "black",
                   border: "none",
                 }}
                 href="https://nativeprotracker.com"
               >
-                <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i>{" "}
+                <i className="fa fa-lg fa-line-chart text-black" aria-hidden="true"></i>{" "}
                 NativeProTracker
               </Button>
               <a href="https://nativeprotracker.com">
@@ -161,7 +161,7 @@ function SectionExamples() {
                   alt="..."
                   className="img-rounded img-responsive"
                   src={require("assets/img/Branding.jpg")}
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", height: "auto" }}
                   load="lazy"
                 />
               </a>

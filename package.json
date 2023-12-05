@@ -22,7 +22,7 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm update && npm start",
     "compile-sass": "sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css",
     "minify-sass": "sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --style compressed",
-    "predeploy": "npm run build",
+    
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

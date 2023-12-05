@@ -1,7 +1,6 @@
 import React from "react";
 import classnames from "classnames";
 import {
-  Button,
   Collapse,
   Navbar,
   NavItem,
@@ -34,6 +33,7 @@ function IndexNavbar() {
             })}
             onClick={toggleNavbarCollapse}
             style={{ marginLeft: "auto" }}
+            aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-bar bar1" />
             <span className="navbar-toggler-bar bar2" />
@@ -163,42 +163,6 @@ function IndexNavbar() {
                 <i className="fa fa-lg fa-file-o" />
                 <p className="d-lg-none"> Resume</p>
               </NavLink>
-            </NavItem>
-            <NavItem>
-              <Button
-                className="btn-round"
-                style={{
-                  fontSize: "1em",
-                  margin: ".3em",
-                  backgroundColor: "#007BFF",
-                  color: "white",
-                  border: "none",
-                }}
-                role="button"
-                href="https://www.slapshot16.com/"
-                target="_blank"
-              >
-                <i className="fa fa-lg fa-cutlery" aria-hidden="true"></i>{" "}
-                SlapShot16
-              </Button>
-            </NavItem>
-            <NavItem>
-              <Button
-                className=" btn-round"
-                style={{
-                  fontSize: "1em",
-                  margin: ".3em",
-                  backgroundColor: "#007BFF",
-                  color: "white",
-                  border: "none",
-                }}
-                role="button"
-                href="https://nativeprotracker.com/"
-                target="_blank"
-              >
-                <i className="fa fa-lg fa-line-chart" aria-hidden="true"></i>{" "}
-                ProTracker
-              </Button>
             </NavItem>
           </Nav>
         </Collapse>

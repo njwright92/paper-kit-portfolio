@@ -9,6 +9,8 @@ import {
   CarouselIndicators,
 } from "reactstrap";
 import "../../assets/css/SectionLogin.css";
+import brewing from "../../assets/img/brewing.mp4";
+import jetpack from "../../assets/img/jetPack.mp4";
 
 const items = [
   {
@@ -55,10 +57,11 @@ const items = [
   },
   {
     style: { width: "auto", height: "25em" },
-    src: require("assets/img/brewing.gif"),
+    src: brewing,
     altText: "Brewing",
     caption: "Brewing",
     load: "lazy",
+    type: "video",
   },
   {
     style: { width: "auto", height: "25em" },
@@ -76,10 +79,11 @@ const items = [
   },
   {
     style: { width: "auto", height: "25em" },
-    src: require("assets/img/jetPack.gif"),
+    src: jetpack,
     altText: "flying",
     caption: "More good Times",
     load: "lazy",
+    type: "video",
   },
   {
     style: { width: "auto", height: "25em" },
@@ -189,14 +193,28 @@ function SectionCarousel() {
                         onExited={onExited}
                         key={item.src}
                       >
-                        <img
-                          src={item.src}
-                          alt={item.altText}
-                          style={item.style}
-                        />
+                        {item.type === "video" ? (
+                          <video
+                            style={item.style}
+                            loop
+                            autoPlay
+                            muted
+                            playsInline
+                          >
+                            <source src={item.src} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : (
+                          <img
+                            src={item.src}
+                            alt={item.altText}
+                            style={item.style}
+                          />
+                        )}
                       </CarouselItem>
                     );
                   })}
+
                   <a
                     className="left carousel-control carousel-control-prev"
                     data-slide="prev"
