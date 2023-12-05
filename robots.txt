@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://njwright92.github.io/paper-kit-portfolio/sitemap.xml
