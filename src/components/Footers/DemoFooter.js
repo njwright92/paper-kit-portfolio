@@ -4,7 +4,7 @@ import { Row, Container, Button } from "reactstrap";
 const DemoFooter = memo(() => {
   useEffect(() => {
     const img = new Image();
-    img.src = require("assets/img/uriel-soberanes.jpg");
+    img.src = require("assets/img/federico-beccari.webp");
   }, []);
 
   return (
@@ -12,7 +12,7 @@ const DemoFooter = memo(() => {
       className="footer"
       style={{
         backgroundImage:
-          "url(" + require("assets/img/uriel-soberanes.jpg") + ")",
+          "url(" + require("assets/img/federico-beccari.webp") + ")",
         backgroundSize: "cover",
         backgroundPosition: "center",
         marginBottom: "4em",

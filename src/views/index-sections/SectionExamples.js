@@ -62,7 +62,7 @@ function SectionExamples() {
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
-                  src={require("assets/img/micFinder.png")}
+                  src={require("assets/img/micFinder.webp")}
                   style={{ width: "100%", height: "auto" }}
                   load="lazy"
                 />
@@ -111,7 +111,7 @@ function SectionExamples() {
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
-                  src={require("assets/img/Comics.jpg")}
+                  src={require("assets/img/Comics.webp")}
                   style={{ width: "75%", height: "auto" }}
                   load="lazy"
                 />
@@ -160,7 +160,7 @@ function SectionExamples() {
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
-                  src={require("assets/img/Branding.jpg")}
+                  src={require("assets/img/Branding.webp")}
                   style={{ width: "100%", height: "auto" }}
                   load="lazy"
                 />

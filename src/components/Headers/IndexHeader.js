@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "reactstrap";
 import "../../assets/css/styles.css";
-import fernanImage from "../../assets/img/fernan.JPG";
-import cloudsImage from "../../assets/img/clouds.png";
-import jrDevImage from "../../assets/img/jrDev.jpeg";
+import fernanImage from "../../assets/img/fernan.webp";
+import cloudsImage from "../../assets/img/clouds.webp";
+import jrDevImage from "../../assets/img/jrDev.webp";
 
 function IndexHeader() {
   const backgroundImageStyle = {
@@ -36,14 +36,14 @@ function IndexHeader() {
                 <div className="fog-low">
                   <img
                     alt="..."
-                    src={require("assets/img/fog-low.png")}
+                    src={require("assets/img/fog-low.webp")}
                     load="lazy"
                   />
                 </div>
                 <div className="fog-low right">
                   <img
                     alt="..."
-                    src={require("assets/img/fog-low.png")}
+                    src={require("assets/img/fog-low.webp")}
                     load="lazy"
                   />
                 </div>
