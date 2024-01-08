@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/paper-kit-portfolio/static/css/main.487296b9.css",
-    "main.js": "/paper-kit-portfolio/static/js/main.327cbba6.js",
+    "main.js": "/paper-kit-portfolio/static/js/main.c791a4c6.js",
     "static/css/564.feab197b.chunk.css": "/paper-kit-portfolio/static/css/564.feab197b.chunk.css",
-    "static/js/564.b3d427ba.chunk.js": "/paper-kit-portfolio/static/js/564.b3d427ba.chunk.js",
+    "static/js/564.0a523851.chunk.js": "/paper-kit-portfolio/static/js/564.0a523851.chunk.js",
     "static/js/180.18443edf.chunk.js": "/paper-kit-portfolio/static/js/180.18443edf.chunk.js",
     "static/media/flora.png": "/paper-kit-portfolio/static/media/flora.aa0c4643fe615adbf950.png",
     "static/media/charts.webp": "/paper-kit-portfolio/static/media/charts.8b48633332793750950f.webp",
@@ -24,9 +24,9 @@
     "static/media/ProTracking.webp": "/paper-kit-portfolio/static/media/ProTracking.ef163d988bc7cd1d5ba8.webp",
     "static/media/ripper-snowboarder.mp4": "/paper-kit-portfolio/static/media/ripper-snowboarder.9b8fc20ee28ab5c4f627.mp4",
     "static/media/flinstone.webp": "/paper-kit-portfolio/static/media/flinstone.63938cc3f4edab0492e1.webp",
-    "static/media/Resume1.1.pdf": "/paper-kit-portfolio/static/media/Resume1.1.9011080459b375bf970a.pdf",
     "static/media/fog-low.webp": "/paper-kit-portfolio/static/media/fog-low.2440bf59ab8799a78e8c.webp",
     "static/media/me.webp": "/paper-kit-portfolio/static/media/me.2c10e64077d133792508.webp",
+    "static/media/Resume1.1.pdf": "/paper-kit-portfolio/static/media/Resume1.1.4008cce9f5118f035e50.pdf",
     "static/media/nucleo-icons.eot": "/paper-kit-portfolio/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
     "static/media/nucleo-icons.ttf": "/paper-kit-portfolio/static/media/nucleo-icons.4466aeec3386b965a232.ttf",
     "static/media/nucleo-icons.woff": "/paper-kit-portfolio/static/media/nucleo-icons.8e954b749f951b654fc6.woff",
@@ -37,6 +37,6 @@
   },
   "entrypoints": [
     "static/css/main.487296b9.css",
-    "static/js/main.327cbba6.js"
+    "static/js/main.c791a4c6.js"
   ]
 }
