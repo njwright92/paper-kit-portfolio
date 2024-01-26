@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import {
   Card,
   Container,
@@ -95,48 +95,39 @@ const items = [
 ];
 
 function SectionCarousel() {
-  const [state, setState] = React.useState({
-    activeIndex: 0,
-    animating: false,
-  });
-  const { activeIndex, animating } = state;
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  // Helper function to calculate the next index
+  const calculateNextIndex = useCallback(
+    (currentIndex, offset) =>
+      (currentIndex + offset + items.length) % items.length,
+    []
+  );
+
+  const changeIndex = useCallback(
+    (newIndex) => {
+      if (!animating) {
+        setActiveIndex(newIndex);
+      }
+    },
+    [animating]
+  );
 
   const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
+    changeIndex(calculateNextIndex(activeIndex, 1));
   };
 
   const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
+    changeIndex(calculateNextIndex(activeIndex, -1));
   };
 
   const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
+    changeIndex(newIndex);
   };
 
-  const setActiveIndex = (nextIndex) => {
-    setState((prevState) => ({
-      ...prevState,
-      activeIndex: nextIndex,
-    }));
-  };
-
-  const setAnimating = (isAnimating) => {
-    setState((prevState) => ({
-      ...prevState,
-      animating: isAnimating,
-    }));
-  };
-  const onExiting = () => {
-    setAnimating(true);
-  };
-  const onExited = () => {
-    setAnimating(false);
-  };
+  const onExiting = () => setAnimating(true);
+  const onExited = () => setAnimating(false);
 
   return (
     <React.Fragment>
@@ -195,7 +186,8 @@ function SectionCarousel() {
                       >
                         {item.type === "video" ? (
                           <video
-                            style={item.style}
+                            style={{ ...item.style, margin: "auto" }}
+                            loading="lazy"
                             loop
                             autoPlay
                             muted
@@ -208,7 +200,8 @@ function SectionCarousel() {
                           <img
                             src={item.src}
                             alt={item.altText}
-                            style={item.style}
+                            style={{ ...item.style, margin: "auto" }}
+                            loading="lazy"
                           />
                         )}
                       </CarouselItem>

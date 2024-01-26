@@ -30,7 +30,7 @@ const SectionButtons = () => {
                 textShadow: "2px 2px 4px #000000",
               }}
             >
-              <strong>My ReactApp Portfolio</strong>
+              <strong>My Portfolio</strong>
             </h1>
           </Col>
         </Row>
@@ -46,8 +46,7 @@ const SectionButtons = () => {
                 fontWeight: "bold",
               }}
             >
-              <i className="fa fa-file-pdf-o fa-pulse" aria-hidden="true" />{" "}
-              View Resume
+              <i className="fa fa-file-pdf-o" aria-hidden="true" /> View Resume
             </a>
           </Col>
         </Row>
@@ -81,25 +80,25 @@ const SectionButtons = () => {
         </Row>
         <Row className="align-items-center justify-content-center">
           <Col xs={12} md={6} className="text-center mb-2 mt-4">
-          <video
-            style={{
-              borderRadius: "25%",
-              boxShadow: "0 0 1em rgba(0,0,0,0.5)",
-              maxWidth: "27em",
-              width: "100%",
-              height: "auto"
-            }}
-            loop
-            autoPlay
-            muted
-            playsInline
-          >
-            <source src={nys} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </Col>
+            <video
+              style={{
+                borderRadius: "1rem",
+                boxShadow: "4px 4px 8px rgba(0,0,0)",
+                maxWidth: "27em",
+                width: "100%",
+                height: "auto",
+              }}
+              loop
+              autoPlay
+              muted
+              playsInline
+            >
+              <source src={nys} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Col>
           <Col xs={12} md={6} className="text-center mb-2 mt-4 p-1">
-            <Card className="bg-secondary rounded-5">
+            <Card className="bg-secondary rounded-lg">
               <CardBody>
                 <CardTitle
                   tag="h1"
@@ -133,7 +132,7 @@ const SectionButtons = () => {
                   fontSize: "1em",
                   margin: "auto",
                   boxShadow: "4px 4px 8px white",
-                  marginBottom: ".5em",
+                  marginBottom: ".5rem",
                   backgroundColor: "#007BFF",
                   color: "black",
                   border: "none",
@@ -142,7 +141,7 @@ const SectionButtons = () => {
               >
                 <i
                   className="fa fa-address-card"
-                  style={{ marginRight: ".3em" }}
+                  style={{ marginRight: ".25rem" }}
                 ></i>{" "}
                 Email Me
               </Button>
