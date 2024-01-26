@@ -4660,15 +4660,15 @@ License - nucleoapp.com/license/
 }
 
 .page-carousel {
-  border-radius: 10px !important;
+  border-radius: 12px !important;
   border: none !important;
   width: 100%;
 }
 
 .carousel-inner > .carousel-item > img,
 .carousel-inner > .carousel-item > a > img {
-  border-radius: 102px;
- 
+  border-radius: 12px;
+  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
 }
 .carousel-inner .carousel-item img {
   width: 100%;
@@ -5578,7 +5578,7 @@ License - nucleoapp.com/license/
   overflow: hidden;
   white-space: nowrap;
   display: inline-block; /* Added this */
-  animation: typing 5s steps(40) infinite;
+  animation: typing 6s steps(40) infinite;
 }
 
 @keyframes typing {
