@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/paper-kit-portfolio/static/css/main.0d8855d2.css",
-    "main.js": "/paper-kit-portfolio/static/js/main.032eb3df.js",
-    "static/css/564.feab197b.chunk.css": "/paper-kit-portfolio/static/css/564.feab197b.chunk.css",
-    "static/js/564.76237722.chunk.js": "/paper-kit-portfolio/static/js/564.76237722.chunk.js",
-    "static/js/180.9cf0ba0d.chunk.js": "/paper-kit-portfolio/static/js/180.9cf0ba0d.chunk.js",
-    "static/media/flora.png": "/paper-kit-portfolio/static/media/flora.aa0c4643fe615adbf950.png",
+    "main.js": "/paper-kit-portfolio/static/js/main.585f1bfb.js",
+    "static/css/809.feab197b.chunk.css": "/paper-kit-portfolio/static/css/809.feab197b.chunk.css",
+    "static/js/809.8eec31b3.chunk.js": "/paper-kit-portfolio/static/js/809.8eec31b3.chunk.js",
+    "static/js/602.6484f8a0.chunk.js": "/paper-kit-portfolio/static/js/602.6484f8a0.chunk.js",
     "static/media/charts.webp": "/paper-kit-portfolio/static/media/charts.8b48633332793750950f.webp",
     "static/media/reducer.webp": "/paper-kit-portfolio/static/media/reducer.2cd15ce49a6e14b0dd93.webp",
     "static/media/brewing.mp4": "/paper-kit-portfolio/static/media/brewing.dd1697001516e0f53544.mp4",
@@ -16,27 +15,24 @@
     "static/media/federico-beccari.webp": "/paper-kit-portfolio/static/media/federico-beccari.c0e2d0a019f12874cb79.webp",
     "static/media/clouds.webp": "/paper-kit-portfolio/static/media/clouds.08f1a1750f11d6dbc36b.webp",
     "static/media/medium.webp": "/paper-kit-portfolio/static/media/medium.0b61da8bd1395ecba28c.webp",
-    "static/media/micFinder.webp": "/paper-kit-portfolio/static/media/micFinder.5968ccc562f63eb83fcd.webp",
     "static/media/ssMenu.webp": "/paper-kit-portfolio/static/media/ssMenu.3e9832e4ad78126c4379.webp",
     "static/media/rail.webp": "/paper-kit-portfolio/static/media/rail.13a2ed5e41e18de0c1f0.webp",
-    "static/media/Comics.webp": "/paper-kit-portfolio/static/media/Comics.907710e0a022b2443549.webp",
     "static/media/bshaw.webp": "/paper-kit-portfolio/static/media/bshaw.55052253ff1eac37ccc5.webp",
     "static/media/ProTracking.webp": "/paper-kit-portfolio/static/media/ProTracking.ef163d988bc7cd1d5ba8.webp",
     "static/media/ripper-snowboarder.mp4": "/paper-kit-portfolio/static/media/ripper-snowboarder.9b8fc20ee28ab5c4f627.mp4",
     "static/media/flinstone.webp": "/paper-kit-portfolio/static/media/flinstone.63938cc3f4edab0492e1.webp",
     "static/media/fog-low.webp": "/paper-kit-portfolio/static/media/fog-low.2440bf59ab8799a78e8c.webp",
+    "static/media/Resume1.1.pdf": "/paper-kit-portfolio/static/media/Resume1.1.f5a032bcfcddf5e5ed2e.pdf",
     "static/media/me.webp": "/paper-kit-portfolio/static/media/me.2c10e64077d133792508.webp",
-    "static/media/Resume1.1.pdf": "/paper-kit-portfolio/static/media/Resume1.1.4008cce9f5118f035e50.pdf",
     "static/media/nucleo-icons.eot": "/paper-kit-portfolio/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
     "static/media/nucleo-icons.ttf": "/paper-kit-portfolio/static/media/nucleo-icons.4466aeec3386b965a232.ttf",
     "static/media/nucleo-icons.woff": "/paper-kit-portfolio/static/media/nucleo-icons.8e954b749f951b654fc6.woff",
     "static/media/nucleo-icons.woff2": "/paper-kit-portfolio/static/media/nucleo-icons.ec16bc4cc4526801004d.woff2",
-    "static/media/Branding.webp": "/paper-kit-portfolio/static/media/Branding.c1c01ac7c25176bf2bbc.webp",
     "static/media/jrDev.webp": "/paper-kit-portfolio/static/media/jrDev.7f7fb083c06eeb784791.webp",
     "index.html": "/paper-kit-portfolio/index.html"
   },
   "entrypoints": [
     "static/css/main.0d8855d2.css",
-    "static/js/main.032eb3df.js"
+    "static/js/main.585f1bfb.js"
   ]
 }
