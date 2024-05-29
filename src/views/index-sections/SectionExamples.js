@@ -60,36 +60,28 @@ function SectionExamples() {
               <i className="fa fa-lg fa-leaf text-black" aria-hidden="true"></i>{" "}
               Floras Weddings
             </Button>
-            <a href="https://florasweddings.com/">
-              <img
-                alt="Floras Weddings"
-                className="img-rounded img-responsive"
-                src={require("assets/img/flora.png")}
-                style={{ width: "100%", height: "auto" }}
-                load="lazy"
-              />
-            </a>
           </Col>
 
           <Col className="text-center mt-2" md="6">
             <div style={{ fontSize: "1.2em", lineHeight: "1.5" }}>
               <hr style={{ backgroundColor: "black", height: ".2em" }} />
-              <span role="img" aria-label="microphone">
+              <span role="img" aria-label="comedy">
                 🎤
               </span>
-              <strong style={{ fontSize: "1.3em" }}>OpenMicFinder:</strong>
+              <strong style={{ fontSize: "1.3em" }}>Humor Hub:</strong>
               <hr style={{ backgroundColor: "black", height: ".2em" }} />
               <em>Status:</em> Live but under Construction
               <br />
               <em>Technologies:</em> Next.js, React, Firebase, Google Cloud
-              Platform Maps
+              Platform Maps, Hugging Face, JavaScript, Python
               <br />
               <strong>Overview:</strong>
               <br />
-              OpenMicFinder is a platform for discovering open mic events
-              tailored for stand-up comedians and artists. Built with
-              TypeScript, Firebase/Firestore for data management, and integrated
-              with Google Cloud Platform Maps for location-based features.
+              Humor Hub is an all-in-one comedy platform for discovering open
+              mic events, brainstorming with an AI assistant, and more. Built
+              with TypeScript, Firebase/Firestore for data management, and
+              integrated with Google Cloud Platform Maps for location-based
+              features.
             </div>
             <Button
               className="btn-lg btn-round mt-3"
@@ -101,97 +93,34 @@ function SectionExamples() {
                 color: "black",
                 border: "none",
               }}
-              href="https://micfinder-fb06f.web.app/"
+              href="https://thehumorhub.com/"
             >
               <i
                 className="fa fa-lg fa-microphone text-black"
                 aria-hidden="true"
               ></i>{" "}
-              OpenMicFinder
+              Humor Hub
             </Button>
-            <a href="https://micfinder-fb06f.web.app/">
-              <img
-                alt="..."
-                className="img-rounded img-responsive"
-                src={require("assets/img/micFinder.webp")}
-                style={{ width: "100%", height: "auto" }}
-                load="lazy"
-              />
-            </a>
           </Col>
 
           <Col className="text-center mt-2" md="6">
             <div style={{ fontSize: "1.2em", lineHeight: "1.5" }}>
               <hr style={{ backgroundColor: "black", height: ".2em" }} />
-              <span role="img" aria-label="microphone">
-                🎤
+              <span role="img" aria-label="portfolio">
+                💼
               </span>
-              <strong style={{ fontSize: "1.3em" }}> Meet Comedify:</strong>
-              <hr style={{ backgroundColor: "black", height: ".2em" }} />
-              <em>Status:</em> Live but under Construction
-              <br />
-              <em>Technologies:</em> Next.js, React, Firebase, Hugging Face,
-              JavaScript, Python
-              <br />
-              <strong>Overview:</strong>
-              <br />
-              Introducing your AI-driven comedic companion, designed to lighten
-              up any room. Currently in development, this project harnesses the
-              power of Python and the sophisticated Transformers library. I'm
-              meticulously training a state-of-the-art language model on a
-              curated collection of top-tier comedy, ensuring a delightful user
-              experience. Anticipate a blend of technology and humor like you've
-              never seen before. Stay tuned for its launch!
-            </div>
-            <Button
-              className="btn-lg btn-round mt-3"
-              style={{
-                fontSize: "1em",
-                margin: "auto",
-                boxShadow: "4px 4px 8px white",
-                backgroundColor: "#007BFF",
-                color: "black",
-                border: "none",
-              }}
-              href="https://comedify-54274.web.app/"
-            >
-              <i
-                className="fa fa-lg fa-smile-o text-black"
-                aria-hidden="true"
-              ></i>{" "}
-              Comedify
-            </Button>
-            <a href="https://comedify-54274.web.app/">
-              <img
-                alt="..."
-                className="img-rounded img-responsive"
-                src={require("assets/img/Comics.webp")}
-                style={{ width: "75%", height: "auto" }}
-                load="lazy"
-              />
-            </a>
-          </Col>
-          <Col className="text-center mt-2" md="6">
-            <div style={{ fontSize: "1.2em", lineHeight: "1.5" }}>
-              <hr style={{ backgroundColor: "black", height: ".2em" }} />
-              <span role="img" aria-label="chart">
-                📈
-              </span>
-              <strong style={{ fontSize: "1.3em" }}>
-                Production Tracking App
-              </strong>
+              <strong style={{ fontSize: "1.3em" }}>Chronark Portfolio:</strong>
               <hr style={{ backgroundColor: "black", height: ".2em" }} />
               <em>Status:</em> Live
               <br />
-              <em>Technologies:</em> G.C.P., Firebase, Expo-React-Native, Redux
-              <br />
-              <em>Deployment:</em> Firebase and G.K.E. cluster
+              <em>Technologies:</em> React, Next.js, Tailwind CSS
               <br />
               <strong>Overview:</strong>
               <br />
-              Native Pro Tracker is an innovative, scalable mobile app for task
-              and product management. Utilizing Google Cloud, Firebase, and
-              Firestore DB for real-time data handling and security.
+              Chronark Portfolio is a sleek and modern personal portfolio
+              website. It features a clean design and is built with React and
+              Next.js, styled with Tailwind CSS, showcasing my skills, projects,
+              and contact information effectively.
             </div>
             <Button
               className="btn-lg btn-round mt-3"
@@ -203,23 +132,14 @@ function SectionExamples() {
                 color: "black",
                 border: "none",
               }}
-              href="https://nativeprotracker.com"
+              href="https://chronark-portfolio-nosync.vercel.app/"
             >
               <i
-                className="fa fa-lg fa-line-chart text-black"
+                className="fa fa-lg fa-briefcase text-black"
                 aria-hidden="true"
               ></i>{" "}
-              NativeProTracker
+              Chronark Portfolio
             </Button>
-            <a href="https://nativeprotracker.com">
-              <img
-                alt="Native Pro Tracker"
-                className="img-rounded img-responsive"
-                src={require("assets/img/Branding.webp")}
-                style={{ width: "100%", height: "auto" }}
-                load="lazy"
-              />
-            </a>
           </Col>
         </Row>
       </Container>
