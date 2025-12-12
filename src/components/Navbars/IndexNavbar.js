@@ -8,7 +8,7 @@ import {
   Nav,
   Container,
 } from "reactstrap";
-import resume from "../../assets/img/Resume1.1.pdf";
+const resume = "/Resume1.1.pdf";
 
 function IndexNavbar() {
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -22,7 +22,7 @@ function IndexNavbar() {
     <Navbar
       className="fixed-bottom"
       expand="lg"
-      style={{ backgroundColor: "#f5f5f5d4" }}
+      style={{ backgroundColor: "rgba(245, 245, 245, 0.6)" }}
     >
       <Container>
         <div className="navbar-translate">
@@ -53,7 +53,7 @@ function IndexNavbar() {
                 <span
                   role="img"
                   aria-label="house"
-                  style={{ fontSize: "1.5em" }}
+                  style={{ fontSize: "2.5em" }}
                 >
                   🏠
                 </span>
@@ -65,7 +65,7 @@ function IndexNavbar() {
                 <span
                   role="img"
                   aria-label="laptop"
-                  style={{ fontSize: "1.5em" }}
+                  style={{ fontSize: "2.5em" }}
                 >
                   💻
                 </span>
@@ -77,7 +77,7 @@ function IndexNavbar() {
                 <span
                   role="img"
                   aria-label="snowflake"
-                  style={{ fontSize: "1.5em", color: "#0000FF" }}
+                  style={{ fontSize: "2.5em", color: "#0000FF" }}
                 >
                   ❄️
                 </span>
@@ -89,7 +89,7 @@ function IndexNavbar() {
                 <span
                   role="img"
                   aria-label="email"
-                  style={{ fontSize: "1.5em", color: "#0000FF" }}
+                  style={{ fontSize: "2.5em", color: "#0000FF" }}
                 >
                   ✉️
                 </span>
@@ -104,7 +104,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="Follow me on Twitter"
               >
-                <i className="fa fa-lg fa-twitter" />
+                <i className="fa fa-2x fa-twitter" />
                 <p className="d-lg-none"> Twitter</p>
               </NavLink>
             </NavItem>
@@ -115,7 +115,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="add me on Facebook"
               >
-                <i className="fa fa-lg fa-facebook-square" />
+                <i className="fa fa-2x fa-facebook-square" />
                 <p className="d-lg-none"> Facebook</p>
               </NavLink>
             </NavItem>
@@ -126,7 +126,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="Follow me on Instagram"
               >
-                <i className="fa fa-lg fa-instagram" />
+                <i className="fa fa-2x fa-instagram" />
                 <p className="d-lg-none"> Instagram</p>
               </NavLink>
             </NavItem>
@@ -137,7 +137,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="add me on GitHub"
               >
-                <i className="fa fa-lg fa-github" />
+                <i className="fa fa-2x fa-github" />
                 <p className="d-lg-none"> GitHub</p>
               </NavLink>
             </NavItem>
@@ -148,7 +148,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="add me on linkedin"
               >
-                <i className="fa fa-lg fa-linkedin" />
+                <i className="fa fa-2x fa-linkedin" />
                 <p className="d-lg-none"> Linkedin</p>
               </NavLink>
             </NavItem>
@@ -160,7 +160,7 @@ function IndexNavbar() {
                 rel="noopener noreferrer"
                 title="Resume"
               >
-                <i className="fa fa-lg fa-file-o" />
+                <i className="fa fa-2x fa-file-o" />
                 <p className="d-lg-none"> Resume</p>
               </NavLink>
             </NavItem>

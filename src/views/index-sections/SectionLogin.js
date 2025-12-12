@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button, Col, FormGroup, Label, Row } from "reactstrap";
 import "../../assets/css/SectionLogin.css";
 
@@ -64,7 +64,7 @@ const ChatBot = () => {
             Site Request!
           </h1>
           <h4 className="text-black mb-3">
-            I'm collecting information to understand your needs. Please answer
+            I&apos;m collecting information to understand your needs. Please answer
             the following questions.
           </h4>
         </Col>

@@ -1,17 +1,24 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import IndexHeader from "components/Headers/IndexHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
-import SectionButtons from "views/index-sections/SectionButtons.js";
-import SectionCarousel from "views/index-sections/SectionCarousel.js";
-import SectionLogin from "views/index-sections/SectionLogin.js";
-import SectionExamples from "views/index-sections/SectionExamples.js";
+
+// Components
+import IndexNavbar from "components/Navbars/IndexNavbar";
+import IndexHeader from "components/Headers/IndexHeader";
+import DemoFooter from "components/Footers/DemoFooter";
 import BackToTop from "components/backToTop";
+
+// Views
+import SectionButtons from "views/index-sections/SectionButtons";
+import SectionCarousel from "views/index-sections/SectionCarousel";
+import SectionLogin from "views/index-sections/SectionLogin";
+import SectionExamples from "views/index-sections/SectionExamples";
+
+// Assets
 const output = "/output.mp4";
 
-function Index() {
+export default function Home() {
   const [showGif, setShowGif] = useState(true);
 
   useEffect(() => {
@@ -46,7 +53,7 @@ function Index() {
   );
 
   return (
-    <React.Fragment>
+    <>
       <IndexNavbar />
       <IndexHeader />
       {showGif && renderGif()}
@@ -74,8 +81,6 @@ function Index() {
 
         <DemoFooter />
       </div>
-    </React.Fragment>
+    </>
   );
 }
-
-export default Index;

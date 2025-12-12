@@ -1,23 +1,23 @@
-import React, { memo, useEffect } from "react";
+/* eslint-disable react/no-unescaped-entities */
+import { memo, useEffect } from "react";
 import { Row, Container, Button } from "reactstrap";
 
-const DemoFooter = memo(() => {
+const DemoFooter = memo(function DemoFooter() {
   useEffect(() => {
     const img = new Image();
-    img.src = require("assets/img/federico-beccari.webp");
+    img.src = "/federico-beccari.webp";
   }, []);
 
   return (
     <footer
       className="footer"
       style={{
-        backgroundImage:
-          "url(" + require("assets/img/federico-beccari.webp") + ")",
+        backgroundImage: "url(" + "/federico-beccari.webp" + ")",
         backgroundSize: "cover",
         backgroundPosition: "center",
         marginBottom: "4em",
       }}
-      load="lazy"
+      loading="lazy"
     >
       <Container>
         <Row className="justify-content-center align-items-center">
@@ -33,7 +33,7 @@ const DemoFooter = memo(() => {
               </h3>
               <p>
                 <strong>
-                  Nathan J. Wright currently located in Coeur D'Alene, Idaho.
+                  Nathan J. Wright currently located in Coeur DDDD'Aleneapos;Aleneapos;Aleneapos;Alene, Idaho.
                 </strong>
               </p>
             </div>
@@ -80,7 +80,7 @@ const DemoFooter = memo(() => {
           >
             <span className="copyright text-black">
               © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-lg fa-heart heart" /> by Nathan Wright
+              <i className="fa fa-2x fa-heart heart" /> by Nathan Wright
             </span>
           </div>
         </Row>

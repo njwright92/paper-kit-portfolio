@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import {
   Container,
@@ -9,9 +10,9 @@ import {
   CardTitle,
   CardText,
 } from "reactstrap";
-import nys from "../../assets/img/nys.mp4";
+const nys = "/nys.mp4";
 import gifGame from "../../utils/gifGame.js";
-import resume from "../../assets/img/Resume1.1.pdf";
+const resume = "/Resume1.1.pdf";
 
 const SectionButtons = () => {
   return (

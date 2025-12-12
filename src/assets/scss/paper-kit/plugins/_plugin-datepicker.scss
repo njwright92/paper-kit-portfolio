@@ -271,7 +271,7 @@
   background-color: #68B3C8;
   color: #FFFFFF;
 }
-.bootstrap-datetimepicker-widget table td.active.today:before > div {
+.bootstrap-datetimepicker-widget table td.active.today:before {
   border-bottom-color: #FFFFFF;
 }
 .bootstrap-datetimepicker-widget table td.disabled > div, .bootstrap-datetimepicker-widget table td.disabled:hover > div {

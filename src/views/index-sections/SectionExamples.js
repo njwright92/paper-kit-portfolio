@@ -36,7 +36,7 @@ function SectionExamples() {
               <br />
               <strong>Overview:</strong>
               <br />
-              Floras Weddings is a website dedicated to showcasing my mother's
+              Floras Weddings is a website dedicated to showcasing my mother&apos;s
               florist business and her exquisite work in wedding floral
               arrangements. This elegant and responsive site features a
               sophisticated design with an immersive gallery, built using

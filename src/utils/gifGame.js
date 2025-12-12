@@ -16,7 +16,7 @@ function showGif() {
 
   // Create source element
   const source = document.createElement("source");
-  source.src = require("../assets/img/ripper-snowboarder.mp4"); // Keep the gif file name
+  source.src = "/ripper-snowboarder.mp4"; // Keep the gif file name
   source.type = "video/mp4"; // Set the correct MIME type for a video file
 
   // Append source to video

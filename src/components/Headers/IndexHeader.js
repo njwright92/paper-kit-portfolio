@@ -1,9 +1,11 @@
+/* eslint-disable react/no-unescaped-entities, @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 import { Container } from "reactstrap";
 import "../../assets/css/styles.css";
-import fernanImage from "../../assets/img/fernan.webp";
-import cloudsImage from "../../assets/img/clouds.webp";
-import jrDevImage from "../../assets/img/jrDev.webp";
+const fernanImage = "/fernan.webp";
+const cloudsImage = "/clouds.webp";
+const jrDevImage = "/jrDev.webp";
 
 function IndexHeader() {
   const backgroundImageStyle = {
@@ -34,37 +36,28 @@ function IndexHeader() {
               <div className="title-brand">
                 <h1 className="presentation-title">Code Showcase!</h1>
                 <div className="fog-low">
-                  <img
-                    alt="..."
-                    src={require("assets/img/fog-low.webp")}
-                    load="lazy"
-                  />
+                  <Image alt="..." src="/fog-low.webp" loading="lazy" />
                 </div>
                 <div className="fog-low right">
-                  <img
-                    alt="..."
-                    src={require("assets/img/fog-low.webp")}
-                    load="lazy"
-                  />
+                  <Image alt="..." src="/fog-low.webp" loading="lazy" />
                 </div>
               </div>
             </div>
             <h2 className="presentation-subtitle text-center">
-              <em>"Your best investment is in yourself!"</em>
+              <em>Your best investment is in yourself! </em>
             </h2>
           </Container>
         </div>
         <div className="moving-clouds" style={movingCloudsStyle} />
         <h6 className="category category-absolute">
-          Designed and coded by {"Nathan Wright"}
-          {/* eslint-disable-next-line */}
+          Designed and coded by {"Nathan Wright"}{" "}
           <a>
-            <img
+            <Image
               alt="..."
               className="creative-tim-logo"
               src={jrDevImage}
               style={{ height: "3.3rem", borderRadius: "3em" }}
-              load="lazy"
+              loading="lazy"
             />
           </a>
         </h6>
